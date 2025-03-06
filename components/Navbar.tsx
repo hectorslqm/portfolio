@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 function Navbar() {
     return(
-        <nav className="fixed min-w-full flex flex-wrap p-2 shadow-xl backdrop-blur-sm z-50">           
+        <nav id="navbar" className="fixed min-w-full flex flex-wrap p-2 shadow-xl backdrop-blur-sm z-50">           
             {/* Large Screen*/}
             <div className="hidden flex-grow lg:flex lg:items-center lg:w-auto space-x-4">
                 <div>

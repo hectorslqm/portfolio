@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import NavbarScrollHandler from "@/components/NavBarScrollHandler";
 
 export const metadata: Metadata = {
   title: "Hector S. Lazcano",
@@ -17,10 +18,11 @@ export default function RootLayout({
     <html lang="en">
       <body className="min-h-screen relative overflow-x-hidden">
         {/* Background wrapper */}
-        <div className="fixed inset-0 -z-10 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900">
+        <div className="fixed inset-0 -z-10 bg-gradient-to-b from-sky-800 via-sky-900 to-slate-800">
           {/* fixed gradient */}
         </div>
         <Navbar/>
+        <NavbarScrollHandler/>
         {/* Decorative "waves" at the top*/}
         <div className="relative h-50 overflow-hidden w-[140%] -left-[10%]">
           <svg
@@ -67,7 +69,7 @@ export default function RootLayout({
           >
             <path 
               d="M0,70 C250,40 350,110 600,80 C750,60 850,100 1200,80 L1200,120 L0,120 Z" 
-              className="fill-slate-600/30"
+              className="fill-slate-900/30"
             ></path>
           </svg>
           <Footer/>

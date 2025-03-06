@@ -1,9 +1,9 @@
 function Footer() {
   return (
-    <footer className="absolute bottom-0 w-full py-2 text-white/80">
-      <div className="container mx-auto px-4 flex justify-between items-center">
+    <footer className="absolute bottom-0 w-full px-4 py-2 text-white/80">
+      <div className="mx-auto px-4 flex justify-between items-center">
         {/* Copyright */}
-        <div className="text-lg">
+        <div className="text-lg text-white">
           <p>© {new Date().getFullYear()} Hector S. Lazcano</p>
         </div>
 
