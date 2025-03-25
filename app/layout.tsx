@@ -32,7 +32,7 @@ export default function RootLayout({
           >
             <path
               d="M0,30 C150,80 350,20 500,70 C650,110 800,30 1200,70 L1200,120 L0,120 Z"
-              className="fill-slate-700/40"
+              className="fill-black/40"
             ></path>
           </svg>
           <svg
@@ -42,7 +42,7 @@ export default function RootLayout({
           >
             <path
               d="M0,70 C250,40 350,110 600,80 C750,60 850,100 1200,80 L1200,120 L0,120 Z"
-              className="fill-slate-600/30"
+              className="fill-black/60"
             ></path>
           </svg>
         </div>

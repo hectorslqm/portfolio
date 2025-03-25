@@ -14,7 +14,7 @@ function Navbar() {
                     <Link href="#responsive-header" className="block lg:inline-block lg:mt-0 text-slate-200 hover:text-white">
                         Portfolio
                     </Link>
-                    <Link href="#responsive-header" className="block lg:inline-block lg:mt-0 text-slate-200 hover:text-white">
+                    <Link href="/work" className="block lg:inline-block lg:mt-0 text-slate-200 hover:text-white">
                         Work
                     </Link>
                     <Link href="#responsive-header" className="block lg:inline-block lg:mt-0 text-slate-200 hover:text-white">
@@ -35,7 +35,7 @@ function Navbar() {
                     <Link href="#responsive-header" className="block text-sm py-2 text-slate-400 hover:text-white">
                         Portfolio
                     </Link>
-                    <Link href="#responsive-header" className="block text-sm py-2 text-slate-400 hover:text-white">
+                    <Link href="/work" className="block text-sm py-2 text-slate-400 hover:text-white">
                         Work
                     </Link>
                     <Link href="#responsive-header" className="block text-sm py-2 text-slate-400 hover:text-white">
@@ -48,7 +48,9 @@ function Navbar() {
                 </div>
             </div>
             <div className="flex items-center flex-grow justify-end text-white mr-1">
-                <span className="font-semibold text-lg tracking-tight">Hector S. Lazcano</span>
+                <Link href="/">
+                    <span className="font-semibold text-lg tracking-tight">Hector S. Lazcano</span>
+                </Link>
             </div>
         </nav>
         
