@@ -11,13 +11,13 @@ function Navbar() {
                     </Link>
                 </div>
                 <div className="text-md space-x-3">
-                    <Link href="#responsive-header" className="block lg:inline-block lg:mt-0 text-slate-200 hover:text-white">
+                    <Link href="/portfolio" className="block lg:inline-block lg:mt-0 text-slate-200 hover:text-white">
                         Portfolio
                     </Link>
                     <Link href="/work" className="block lg:inline-block lg:mt-0 text-slate-200 hover:text-white">
                         Work
                     </Link>
-                    <Link href="#responsive-header" className="block lg:inline-block lg:mt-0 text-slate-200 hover:text-white">
+                    <Link href="/contact" className="block lg:inline-block lg:mt-0 text-slate-200 hover:text-white">
                         Contact
                     </Link>
                 </div>
@@ -32,13 +32,13 @@ function Navbar() {
                 <input type="checkbox" id="menu-toggle" className="hidden peer" title="Toggle menu" />
                 {/* Small screen menu */}
                 <div className="bg-slate-800/90 absolute left-0 top-full mt-0.5 hidden peer-checked:block shadow-xl rounded-lg py-2 px-4 w-36 ml-0.5 z-50">
-                    <Link href="#responsive-header" className="block text-sm py-2 text-slate-400 hover:text-white">
+                    <Link href="/portfolio" className="block text-sm py-2 text-slate-400 hover:text-white">
                         Portfolio
                     </Link>
                     <Link href="/work" className="block text-sm py-2 text-slate-400 hover:text-white">
                         Work
                     </Link>
-                    <Link href="#responsive-header" className="block text-sm py-2 text-slate-400 hover:text-white">
+                    <Link href="/contact" className="block text-sm py-2 text-slate-400 hover:text-white">
                         Contact
                     </Link>
                     <div className="border-t border-slate-400 my-2"></div>
