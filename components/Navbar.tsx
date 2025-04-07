@@ -2,22 +2,22 @@ import Link from 'next/link';
 
 function Navbar() {
     return(
-        <nav id="navbar" className="fixed min-w-full flex flex-wrap p-2 shadow-xl backdrop-blur-sm z-50">           
+        <nav id="navbar" className="fixed min-w-full flex flex-wrap p-2 shadow-xl backdrop-blur-sm z-50 bg-slate-800/90">           
             {/* Large Screen*/}
             <div className="hidden flex-grow lg:flex lg:items-center lg:w-auto space-x-4">
                 <div>
-                    <Link href="#" className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-slate-500 hover:bg-white mt-4 lg:mt-0">
+                    <Link href="#" className="inline-block text-sm px-4 py-2 leading-none border rounded text-slate-200 hover:text-slate-200 border-slate-200 hover:border-transparent hover:bg-slate-800 mt-4 lg:mt-0">
                         Download CV
                     </Link>
                 </div>
                 <div className="text-md space-x-3">
-                    <Link href="/portfolio" className="block lg:inline-block lg:mt-0 text-slate-200 hover:text-white">
+                    <Link href="/portfolio" className="block lg:inline-block lg:mt-0 font-bold text-slate-200 hover:text-white hover:font-light">
                         Portfolio
                     </Link>
-                    <Link href="/work" className="block lg:inline-block lg:mt-0 text-slate-200 hover:text-white">
+                    <Link href="/work" className="block lg:inline-block lg:mt-0 font-bold text-slate-200 hover:text-white hover:font-light">
                         Work
                     </Link>
-                    <Link href="/contact" className="block lg:inline-block lg:mt-0 text-slate-200 hover:text-white">
+                    <Link href="/contact" className="block lg:inline-block lg:mt-0 font-bold text-slate-200 hover:text-white hover:font-light">
                         Contact
                     </Link>
                 </div>

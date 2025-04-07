@@ -42,7 +42,7 @@ export default function RootLayout({
           >
             <path
               d="M0,70 C250,40 350,110 600,80 C750,60 850,100 1200,80 L1200,120 L0,120 Z"
-              className="fill-black/60"
+              className="bg-slate-400"
             ></path>
           </svg>
         </div>
