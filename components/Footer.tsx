@@ -29,7 +29,7 @@ function Footer() {
             </span>
             </Link>
             <Link
-              href="https://www.linkedin.com/in/hector-samuel-lazcano-quintero-marmol-48a766148/"
+              href="https://www.linkedin.com/in/hector-lazcano-qm/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors "

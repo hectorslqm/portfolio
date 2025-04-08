@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import NavbarScrollHandler from "@/components/NavBarScrollHandler";
+import BubbleEffect from "@/components/Bubbles"; 
 
 export const metadata: Metadata = {
   title: "Hector S. Lazcano",
@@ -20,6 +21,7 @@ export default function RootLayout({
         {/* Background wrapper */}
         <div className="fixed inset-0 -z-10 bg-gradient-to-b from-sky-800 via-sky-900 to-slate-800">
           {/* fixed gradient */}
+          <BubbleEffect />
         </div>
         <Navbar/>
         <NavbarScrollHandler/>

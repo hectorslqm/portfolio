@@ -102,7 +102,7 @@ export default function Contact() {
         {/* Footer */}
         <div className="py-3 bg-gray-800 hover:bg-slate-900 text-center">
           <Link
-            href="https://www.linkedin.com/in/h%C3%A9ctor-samuel-lazcano-quintero-m%C3%A1rmol-48a766148/"
+            href="https://www.linkedin.com/in/hector-lazcano-qm/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition-colors flex items-center justify-center"

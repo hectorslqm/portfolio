@@ -128,6 +128,34 @@ export default function HomePage() {
           ))}
         </div>
       </div>
+      {/* Skills Section with animated progress bars */}
+      <div className="mb-16">
+        <h2 className="text-2xl font-bold text-white mb-6 relative inline-block">
+          My Languages
+          <span className="absolute -z-10 -bottom-1 left-0 w-full h-1 bg-teal-400"></span>
+        </h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {[
+            { skill: "Spanish", percentage: 100 },
+            { skill: "English", percentage: 90 },
+            { skill: "Polish", percentage: 20 },
+            { skill: "German", percentage: 15 }
+          ].map((item, index) => (
+            <div key={index} className="mb-4">
+              <div className="flex justify-between mb-1">
+                <span className="text-white">{item.skill}</span>
+              </div>
+              <div className="w-full bg-gray-700 rounded-full h-2">
+                <div 
+                  className="bg-gradient-to-r from-teal-400 to-blue-500 h-2 rounded-full animate-pulse"
+                  style={{ width: `${item.percentage}%` }}
+                ></div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

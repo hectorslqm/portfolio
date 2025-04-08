@@ -11,7 +11,7 @@ export type RepositoriesType = {
 export const Repositories : RepositoriesType = [
     {
         title: "Portfolio",
-        description: "This website I made to show my profile. I used with NextJS, Typescript and Tailwind",
+        description: "This website I made to show my profile. I used NextJS, Typescript and Tailwind",
         tags: ["NextJS", "Tailwind", "TypeScript", "Clickup"],
         url: "https://github.com/hectorslqm/portfolio",
         type: "public"
