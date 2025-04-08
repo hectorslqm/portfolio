@@ -6,9 +6,9 @@ function Navbar() {
             {/* Large Screen*/}
             <div className="hidden flex-grow lg:flex lg:items-center lg:w-auto space-x-4">
                 <div>
-                    <Link href="#" className="inline-block text-sm px-4 py-2 leading-none border rounded text-slate-200 hover:text-slate-200 border-slate-200 hover:border-transparent hover:bg-slate-800 mt-4 lg:mt-0">
+                    <a href="/cv.pdf" download="Hector Lazcano CV.pdf" className="inline-block text-sm px-4 py-2 leading-none border rounded text-slate-200 hover:text-slate-200 border-slate-200 hover:border-transparent hover:bg-slate-800 mt-4 lg:mt-0">
                         Download CV
-                    </Link>
+                    </a>
                 </div>
                 <div className="text-md space-x-3">
                     <Link href="/portfolio" className="block lg:inline-block lg:mt-0 font-bold text-slate-200 hover:text-white hover:font-light">
@@ -42,9 +42,9 @@ function Navbar() {
                         Contact
                     </Link>
                     <div className="border-t border-slate-400 my-2"></div>
-                    <Link href="#" className="inline-block text-sm px-2 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-slate-500 hover:bg-white">
+                    <a href="/cv.pdf" download="Hector Lazcano CV.pdf" className="inline-block text-sm px-2 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-slate-500 hover:bg-white">
                         Download CV
-                    </Link>
+                    </a>
                 </div>
             </div>
             <div className="flex items-center flex-grow justify-end text-white mr-1">

@@ -12,7 +12,7 @@ const WorkTimeline: React.FC = () => {
     return (
         <div className="max-w-4xl mx-auto">
             <div className="relative border-l-8 border-white pl-10 rounded-b-sm">
-                {sortedWorkHistory.map((company, index) => {
+                {sortedWorkHistory.map((company) => {
                     const allPositionsEnded = company.positions.every((position) => position.end);
 
                     return (
@@ -59,7 +59,7 @@ const WorkTimeline: React.FC = () => {
 
                                 {/* Positions */}
                                 {company.positions.slice().reverse().map((position) => (
-                                    <div key={position.position} className="mb-4 pb-4 border-b border-amber-600 last:border-b-0">
+                                    <div key={position.position} className="mb-4 pb-4 border-b border-teal-600 last:border-b-0">
                                         <div className="flex justify-between items-center">
                                             <div>
                                                 <h4 className="font-bold text-slate-900">{position.position}</h4>
@@ -110,7 +110,7 @@ const WorkTimeline: React.FC = () => {
                                             {position.tags.map((tag) => (
                                             <span 
                                             key={tag} 
-                                            className="text-md bg-yellow-300 text-slate-700 px-2 py-1 rounded border-2 border-slate-500 transition-colors duration-200 hover:bg-yellow-500 over:text-slate-800 cursor-pointer"
+                                            className="text-md bg-yellow-400 text-slate-700 px-2 py-1 rounded-xl border-2 transition-colors duration-200 hover:bg-yellow-500 over:text-slate-800 cursor-pointer"
                                             >
                                                 {tag}
                                             </span>
