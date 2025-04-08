@@ -1,9 +1,9 @@
 import React from 'react';
-import { workHistory, workHistoryType } from '@/app/data/WorkData'; // Adjust import path as needed
+import { WorkHistory } from '@/app/data/WorkData'; // Adjust import path as needed
 
 const WorkTimeline: React.FC = () => {
     // Sort work history from most recent to oldest
-    const sortedWorkHistory = [...workHistory].sort((a, b) => {
+    const sortedWorkHistory = [...WorkHistory].sort((a, b) => {
         const latestPositionA = a.positions[a.positions.length - 1];
         const latestPositionB = b.positions[b.positions.length - 1];
         return new Date(latestPositionB.start).getTime() - new Date(latestPositionA.start).getTime();
@@ -30,6 +30,7 @@ const WorkTimeline: React.FC = () => {
                             {/* Company Card */}
                             <div className="bg-slate-200 shadow-lg rounded-lg p-6 border border-gray-100 
                                 transition-all duration-300 group-hover:shadow-xl group-hover:scale-[1.02]">
+                                
                                 <div className="flex justify-between items-start mb-4">
                                     <div>
                                         <a
@@ -43,7 +44,7 @@ const WorkTimeline: React.FC = () => {
                                         </a>
                                     </div>
                                     {/* Company logo */}
-                                    <div className="w-16 h-16 bg-gray-100 rounded-lg  p-1 flex items-center justify-center">
+                                    <div className="w-24 h-24 bg-gray-100 rounded-lg  p-1 flex items-center justify-center">
                                         {company.logo ? (
                                         <img 
                                             src={company.logo} 
@@ -71,7 +72,7 @@ const WorkTimeline: React.FC = () => {
                                                     }
                                                     </p>
                                                     {position.location && (
-                                                        <p className="text-sm text-gray-600 flex">
+                                                        <p className="text-sm text-slate-600 flex">
                                                             <svg
                                                                 xmlns="http://www.w3.org/2000/svg"
                                                                 fill="none"
@@ -109,7 +110,7 @@ const WorkTimeline: React.FC = () => {
                                             {position.tags.map((tag) => (
                                             <span 
                                             key={tag} 
-                                            className="text-md bg-yellow-300 text-slate-700 px-2 py-1 rounded border-2 border-slate-500 transition-colors duration-200 hover:bg-yellow-500 hover:text-slate-800 cursor-pointer"
+                                            className="text-md bg-yellow-300 text-slate-700 px-2 py-1 rounded border-2 border-slate-500 transition-colors duration-200 hover:bg-yellow-500 over:text-slate-800 cursor-pointer"
                                             >
                                                 {tag}
                                             </span>

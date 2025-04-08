@@ -9,7 +9,7 @@ export type PositionType = {
     tags?: string[];
 }
 
-export type workHistoryType = {
+export type WorkHistoryType = {
     company: string;
     companyWebsite?: string;
     logo?: string;
@@ -23,7 +23,7 @@ const createDateUTC = (dateString: string) => {
 };
 
 
-export const workHistory: workHistoryType = [
+export const WorkHistory: WorkHistoryType = [
     {
         company: "Volkswagen de México",
         companyWebsite: "https://www.vw.com.mx/",
@@ -124,7 +124,7 @@ export const workHistory: workHistoryType = [
                     "Creation and enhancement of Queries (Oracle SQL) for the SOAP Web Services",
                     "Debug the code using eclipse"
                 ],
-                tags: ["Java", "OracleSQL", "Bitbucket", "Git", "Jira"],
+                tags: ["Java", "OracleSQL", "Bitbucket", "Git", "Jira", "Agile"],
             },
         ],
     },
