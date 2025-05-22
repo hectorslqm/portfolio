@@ -8,17 +8,17 @@ export type RepositoriesType = {
     url: string;
 }[];
 
-export const Repositories : RepositoriesType = [
+export const Repositories: RepositoriesType = [
     {
         title: "Portfolio",
         description: "This website I made to show my profile. I used NextJS, Typescript and Tailwind",
-        tags: ["NextJS", "Tailwind", "TypeScript", "Clickup"],
+        tags: ["NextJS", "Tailwind", "TypeScript"],
         url: "https://github.com/hectorslqm/portfolio",
         type: "public"
     },
     {
         title: "Users API",
-        description:"This API is a simple CRUD API built using Node.js and Express.js. The API is used to perform CRUD operations on a MongoDB database",
+        description: "This API is a simple CRUD API built using Node.js and Express.js. The API is used to perform CRUD operations on a MongoDB database",
         tags: ["JavaScript", "CSS", "HTML", "Express"],
         url: "https://github.com/hectorslqm/users-API",
         type: "public"
@@ -41,7 +41,7 @@ export const Repositories : RepositoriesType = [
         title: "TAILWIND SAMPLES",
         description: "A playground project to show how Tailwind works",
         url: "https://github.com/hectorslqm/tailwind-samples",
-        tags: ["NextJS","Tailwind", "HTML", "CSS", "TypeScript"],
+        tags: ["NextJS", "Tailwind", "HTML", "CSS", "TypeScript"],
         type: "public"
     },
     {
@@ -63,6 +63,13 @@ export const Repositories : RepositoriesType = [
         description: "This script creates multiple threads to listen to UDP packets, decodes them and prints them",
         url: "https://github.com/hectorslqm/udpListener",
         tags: ["Python"],
+        type: "public"
+    },
+    {
+        title: "Calendar testing",
+        description: "This project is a simple calendar application designed to retrieve events from an ICS (iCalendar) URL and display them in a list format. The primary goal of this project is to explore and understand the elements that can be extracted from ICS files. It serves as a learning tool to demonstrate how to work with calendar data and parse it effectively.",
+        url: "https://github.com/hectorslqm/calendar-testing",
+        tags: ["NextJS", "TypeScript", "Tailwind"],
         type: "public"
     }
 ] 

@@ -37,11 +37,11 @@ export const WorkHistory: WorkHistoryType = [
                 start: createDateUTC("2017-02-01"),
                 end: createDateUTC("2017-08-01"),
                 content: [
-                    "Productive improvement of the Volkswagen’s learning station",
-                    "Redesign of the doors subjection device used in paint shop process of the VW Golf.Generating a saving of $2USD per device",
-                    "Design of a Layout and control of personal’s locker availability",
-                    "Development of a graphical user interface for a better control of the print out of payroll Boucher with a internal web page using PHP and CSS",
-                    "Development of a graphical user interface for management reports of the productive area PPA"
+                    "Productive improvement of the Volkswagen’s learning station.",
+                    "Redesign of the doors subjection device used in paint shop process of the VW Golf.Generating a saving of $2USD per device.",
+                    "Design of a Layout and control of personal’s locker availability.",
+                    "Development of a graphical user interface for a better control of the print out of payroll Boucher with a internal web page using PHP and CSS.",
+                    "Development of a graphical user interface for management reports of the productive area PPA."
                 ],
                 tags: ["PHP", "CSS", "HTML", "Office 365"],
             }
@@ -54,17 +54,17 @@ export const WorkHistory: WorkHistoryType = [
         companyDescription: "One of the world's leading automobile manufacturers. The company operates a large manufacturing plant in Puebla, Mexico, producing a range of vehicles for both domestic and international markets. With a strong commitment to quality and innovation, Volkswagen de México plays a key role in the global operations of the Volkswagen Group.",
         positions: [
             {
-                position: "I.T. Manager", 
+                position: "I.T. Manager",
                 location: "Ciudad mendoza, Veracruz, Mexico",
                 contractType: "freelance",
                 start: createDateUTC("2017-09-01"),
                 end: createDateUTC("2018-07-01"),
                 content: [
-                    "Development of personal and assistance control using Java language and MySQL database",
-                    "Storage of fingerprints in databases using biometric scanner Digital Persona U.are.U 4500",
-                    "Transfer of Personal and vehicles information to a database schema of MySQL",
-                    "Creation of a corporative web page and corporative mails to give customers a most professional attention",
-                    "Design of a new image for the company, by creating a better logo"
+                    "Development of personal and assistance control using Java language and MySQL database.",
+                    "Storage of fingerprints in databases using biometric scanner Digital Persona U.are.U 4500.",
+                    "Transfer of Personal and vehicles information to a database schema of MySQL.",
+                    "Creation of a corporative web page and corporative mails to give customers a most professional attention.",
+                    "Design of a new image for the company, by creating a better logo."
                 ],
                 tags: ["Java Swing", "MySQL", "biometric scanner", "HTML", "CSS", "Photoshop", "Illustrator"],
             }
@@ -83,8 +83,7 @@ export const WorkHistory: WorkHistoryType = [
                 start: createDateUTC("2019-01-01"),
                 end: createDateUTC("2019-08-01"),
                 content: [
-                    "Preventive maintenance to production equipment", 
-                    "Development of a production monitoring program using PLC Delta",
+                    "Performed preventive maintenance on production equipment to ensure operational uptime.",
                 ],
                 tags: ["PLC"],
             },
@@ -95,9 +94,8 @@ export const WorkHistory: WorkHistoryType = [
                 start: createDateUTC("2019-01-01"),
                 end: createDateUTC("2019-08-01"),
                 content: [
-                    "Design of a C# Interface and library to convert parameters for modbus connection between different PLC's", 
-                    "Sensor placement and configuration over the production line",
-                    "Development of interface between PC and PLC mitsubishi monitoring signals and cameras in C#",
+                    "Developed C# interfaces and libraries for Modbus communication and Mitsubishi PLC integration for signal and camera monitoring.",
+                    "Configured sensors and developed production monitoring software using Delta PLC.",
                 ],
                 tags: ["PLC", "Delta", "C#"],
             }
@@ -116,13 +114,11 @@ export const WorkHistory: WorkHistoryType = [
                 start: createDateUTC("2019-12-01"),
                 end: createDateUTC("2022-04-01"),
                 content: [
-                    "Develop new interfaces and policies for VW Mexico and other important customers around the world",
-                    "Create new Unit Tests(JUnit)",
-                    "Creation of new features for the software Miles",
-                    "Update the documentation of the software Miles",
-                    "Follow up tickets and bugs using Jira, with the agile methodology",
-                    "Creation and enhancement of Queries (Oracle SQL) for the SOAP Web Services",
-                    "Debug the code using eclipse"
+                    "Built and optimized backend features for Volkswagen Mexico, working on Miles, a largescale leasing system using Java.",
+                    "Improved data processing and business logic for Miles software features powered by a SOAP API.",
+                    "OptimizedOracleSQLqueries toenhance performanceandsupport evolving requirements.",
+                    "Resolved critical bugs and improved legacy code quality, navigating a complex codebase with high confidence.",
+                    "Collaborated with international teamsin Agile sprints, delivering solutions across multiple countries and time zones."
                 ],
                 tags: ["Java", "OracleSQL", "Bitbucket", "Git", "Jira", "Agile"],
             },
@@ -141,11 +137,9 @@ export const WorkHistory: WorkHistoryType = [
                 start: createDateUTC("2022-04-01"),
                 end: createDateUTC("2024-08-01"),
                 content: [
-                    "Management of a linux virtual machine in Azure used as server",
-                    "Attend the hardware team to make new developments and queries for the available data",
-                    "Create a python script to receive UDP Messages from different sensors at once by using multithreading, ensuring seamless storage of information in the cloud",
-                    "Front-End design and development of dashboards using REACT JS and Material UI consuming the API I developed",
-                    "Added Azure authentication to the Front-End application, ensuring secure access to the admin dashboard",
+                    "Configured Linux Azure server for real-time UDP data ingestion.",
+                    "Designed initial PostgreSQL schema and developed the first Python REST API.",
+                    "Built first React dashboard with Material UI and Azure AD authentication.",
                 ],
                 tags: ["Python", "Javascript", "React", "PostgreSQL", "Azure", "Github"],
             },
@@ -155,14 +149,9 @@ export const WorkHistory: WorkHistoryType = [
                 location: "College Station, Texas, USA",
                 start: createDateUTC("2024-08-01"),
                 content: [
-                    "Lead developer of the team, responsible for mentoring other developers, organizing task assignments, designing new developments, overseeing interns and developing new features",
-                    "Development of multiple Python programs in a well-structured manner, adhering to best practices",
-                    "Upgrade the REST API backend logic to make it more efficient and scalable, including the implementation of a new authentication system using JWT",
-                    "Migration of the current dashboard (SPA) to a Next JS (Typescript) escalable application using, with server-side rendering, making it more efficient and SEO friendly",
-                    "Implemented a CI/CD pipeline using Github Actions, automating the deployment process",
-                    "Apply the styles of the new dashboard using Tailwind CSS, ensuring a modern and responsive design",
-                    "Debugging and fixing issues in the codebase, ensuring a smooth user experience in Python, React, and Next JS",
-                    "Follow up tickets and bugs using ClickUp",
+                    "Developed a scalable Python REST API to power a real-time reporting system using roadside sensor data, with JWT authentication and PostgreSQL as the main database.",
+                    "Created a dashboard from scratch using Next.js (TypeScript), Tailwind CSS, and SSR for better performance and SEO.",
+                    "Led a dev team, managing tasks, code reviews, and mentoring interns."
                 ],
                 tags: ["Python", "Javascript", "React", "PostgreSQL", "Azure", "Github", "ClickUp"],
             },
