@@ -11,13 +11,10 @@ function Navbar() {
                     </a>
                 </div>
                 <div className="text-md space-x-3">
-                    <Link href="/portfolio" className="block lg:inline-block lg:mt-0 font-bold text-slate-200 hover:text-white hover:font-light">
-                        Portfolio
+                    <Link href="/projects" className="block lg:inline-block lg:mt-0 font-bold text-slate-200 hover:text-yellow-500 hover:font-light">
+                        Projects
                     </Link>
-                    <Link href="/work" className="block lg:inline-block lg:mt-0 font-bold text-slate-200 hover:text-white hover:font-light">
-                        Work
-                    </Link>
-                    <Link href="/contact" className="block lg:inline-block lg:mt-0 font-bold text-slate-200 hover:text-white hover:font-light">
+                    <Link href="/contact" className="block lg:inline-block lg:mt-0 font-bold text-slate-200 hover:text-yellow-500 hover:font-light">
                         Contact
                     </Link>
                 </div>
@@ -32,11 +29,8 @@ function Navbar() {
                 <input type="checkbox" id="menu-toggle" className="hidden peer" title="Toggle menu" />
                 {/* Small screen menu */}
                 <div className="bg-gray-900/90 absolute left-0 top-full mt-0.5 hidden peer-checked:block shadow-xl rounded-lg py-2 px-4 w-36 ml-0.5 z-50 border-1 border-yellow-500">
-                    <Link href="/portfolio" className="block text-sm py-2 text-slate-400 hover:text-white">
-                        Portfolio
-                    </Link>
-                    <Link href="/work" className="block text-sm py-2 text-slate-400 hover:text-white">
-                        Work
+                    <Link href="/projects" className="block text-sm py-2 text-slate-400 hover:text-white">
+                        Projects
                     </Link>
                     <Link href="/contact" className="block text-sm py-2 text-slate-400 hover:text-white">
                         Contact
@@ -49,7 +43,7 @@ function Navbar() {
             </div>
             <div className="flex items-center flex-grow justify-end text-white mr-1">
                 <Link href="/">
-                    <span className="font-semibold text-lg tracking-tight">Hector S. Lazcano</span>
+                    <span className="font-semibold text-lg tracking-tight hover:text-xl hover:underline hover:text-yellow-500">Hector S. Lazcano</span>
                 </Link>
             </div>
         </nav>

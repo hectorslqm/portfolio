@@ -44,17 +44,18 @@ const WorkTimeline: React.FC = () => {
                                         </a>
                                     </div>
                                     {/* Company logo */}
-                                    <div className="w-24 h-24 bg-gray-100 rounded-lg  p-1 flex items-center justify-center">
-                                        {company.logo ? (
-                                            <img
-                                                src={company.logo}
-                                                alt={`${company.company} logo`}
-                                                className="w-full h-full object-contain rounded-lg"
-                                            />
-                                        ) : (
-                                            <span className="text-gray-200 text-sm">Logo</span>
-                                        )}
-                                    </div>
+                                    {company.logo &&
+                                        (
+                                            <div className="w-24 h-24 bg-gray-100 rounded-lg  p-1 flex items-center justify-center">
+                                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                                <img
+                                                    src={company.logo}
+                                                    alt={`${company.company} logo`}
+                                                    className="w-full h-full object-contain rounded-lg"
+                                                />
+                                            </div>
+                                        )
+                                    }
                                 </div>
 
                                 {/* Positions */}

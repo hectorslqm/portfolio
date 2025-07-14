@@ -104,7 +104,7 @@ export const WorkHistory: WorkHistoryType = [
     {
         company: "SOFICO",
         companyWebsite: "https://sofico.be",
-        logo: "https://sofico.global/app/themes/sage/public/images/general/logo-sofico.cec1ce.svg",
+        // logo: "https://sofico.global/app/themes/sage/public/images/general/logo-sofico.cec1ce.svg",
         companyDescription: "Sofico is the world’s leading supplier of mission-critical software solutions for automotive finance, leasing, fleet, and mobility management companies, and its software is used by a broad range of renowned leasing companies all over the world. Sofico was founded in 1988 in Ghent, Belgium, and has over 35 years of experience and business expertise in the industry. It is semi-privately owned, independent and currently employs 550 people in 11 offices worldwide. The company has installed its systems in 27 countries worldwide.",
         positions: [
             {
@@ -127,7 +127,7 @@ export const WorkHistory: WorkHistoryType = [
     {
         company: "Texas A&M Transportation Institute",
         companyWebsite: "https://tti.tamu.edu",
-        logo: "https://tti.tamu.edu/wp-content/themes/tti18/images/tti-logo-rgb.svg",
+        // logo: "https://tti.tamu.edu/wp-content/themes/tti18/images/tti-logo-rgb.svg",
         companyDescription: "Texas A&M Transportation Institute (TTI) is a state agency and a member of The Texas A&M University System. The research program at TTI addresses the mobility challenges of the 21st century, with an emphasis on safety and security, reliability and resiliency, and sustainability.",
         positions: [
             {

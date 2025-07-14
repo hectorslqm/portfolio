@@ -4,7 +4,7 @@ import { Repositories } from '@/app/data/Repositories';
 import GitCard from '@/components/GitCard';
 import { Tags } from '@/app/data/Tags';
 
-function Portfolio() {
+function Projects() {
     type FilterType = "All" | keyof typeof Tags;
     const [filter, setFilter] = useState<FilterType>('All');
 
@@ -42,4 +42,4 @@ function Portfolio() {
     );
 }
 
-export default Portfolio;
+export default Projects;
