@@ -149,9 +149,10 @@ export const WorkHistory: WorkHistoryType = [
                 location: "College Station, Texas, USA",
                 start: createDateUTC("2024-08-01"),
                 content: [
+                    "Promoted from Developer I after demonstrating leadership and technical excellence.",
                     "Developed a scalable Python REST API to power a real-time reporting system using roadside sensor data, with JWT authentication and PostgreSQL as the main database.",
-                    "Created a dashboard from scratch using Next.js (TypeScript), Tailwind CSS, and SSR for better performance and SEO.",
-                    "Led a dev team, managing tasks, code reviews, and mentoring interns."
+                    "Developed dashboards from scratch using Next.js (TypeScript), Tailwind CSS, and SSR for better performance and SEO.",
+                    "Led a development team, managing tasks, code reviews, and mentoring interns and junior developers.",
                 ],
                 tags: ["Python", "Javascript", "React", "PostgreSQL", "Azure", "Github", "ClickUp"],
             },
