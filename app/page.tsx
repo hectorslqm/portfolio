@@ -4,6 +4,7 @@ import Link from "next/link";
 import Typewriter from "@/utils/Typewriter";
 import Image from "next/image";
 import WorkTimeline from "@/components/WorkTimeLine";
+import RevealOnScroll from "@/utils/RevealOnScroll";
 
 // const Cards = () => {
 //   const startYear = 2018;
@@ -81,11 +82,13 @@ export default function HomePage() {
               <span className="absolute left-2 -bottom-2 w-full h-3 bg-yellow-400 opacity-80 blur-md animate-pulse" />
             </span>
           </h1>
-          <p className="text-slate-300 text-2xl mb-8">
-            <Typewriter text={mainText} speed={55} />
-          </p>
+          <RevealOnScroll direction="right">
+            <p className="text-slate-300 text-2xl mb-8">
+              {mainText}
+            </p>
+          </RevealOnScroll>
           <p className="text-slate-400 text-lg mt-2 mb-8 flex flex-col ">
-            {`I'm open to new opportunities where I can continue learning, growing, and making an impact through great software.`}
+            <Typewriter text={`I'm open to new opportunities where I can continue learning, growing, and making an impact through great software.`} speed={55} />
           </p>
           <div className="flex space-x-4">
             <Link href="/projects" className="px-6 py-3 bg-yellow-400 hover:bg-yellow-500 text-black rounded-md transition-colors duration-300 flex items-center space-x-2">
@@ -99,29 +102,30 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-
         {/* Right side - Photo */}
-        <div className="w-full md:w-2/5 flex justify-center md:justify-end">
-          <div className="relative">
-            {/* Contenedor de la imagen con efecto glow interno */}
-            <div className="relative w-3/4 h-auto rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/20 transition-transform duration-700 hover:scale-105 bg-black group">
-              
-              {/* Aura interna (glow) */}
-              <div className="absolute inset-0 z-0 bg-cyan-400 opacity-15 blur-3xl group-hover:opacity-30 transition-opacity duration-700" />
+        
+          <div className="w-full md:w-2/5 flex justify-center md:justify-end">
+            <div className="relative">
+              {/* Contenedor de la imagen con efecto glow interno */}
+              <div className="relative w-3/4 h-auto rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/20 transition-transform duration-700 hover:scale-105 bg-black group">
+                
+                <RevealOnScroll direction="left">
+                {/* Aura interna (glow) */}
+                <div className="absolute inset-0 z-0 bg-cyan-400 opacity-15 blur-3xl group-hover:opacity-30 transition-opacity duration-700" />
 
-              {/* Imagen real */}
-              <Image
-                src="/images/me.png"
-                alt="Héctor Lazcano"
-                className="relative z-10 w-full h-full object-cover"
-                width={700}
-                height={700}
-                priority
-              />
+                {/* Imagen real */}
+                  <Image
+                    src="/images/me.png"
+                    alt="Héctor Lazcano"
+                    className="relative z-10 w-full h-full object-cover"
+                    width={700}
+                    height={700}
+                    priority
+                  />
+                </RevealOnScroll>
+              </div>
             </div>
           </div>
-        </div>
-
 
       </div>
 

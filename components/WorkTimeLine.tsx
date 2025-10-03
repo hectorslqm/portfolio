@@ -66,7 +66,7 @@ const WorkTimeline: React.FC = () => {
                                         <div key={position.position} className="mb-4 pb-4 border-b border-yellow-400 last:border-b-0">
                                             <div className="flex justify-between flex-col sm:flex-row sm:items-center">
                                                 <div>
-                                                    <h4 className="font-bold text-yellow-500">{position.position}</h4>
+                                                    <h4 className="font-bold  text-xl text-yellow-500">{position.position}</h4>
                                                     <div className='flex justify-around space-x-8'>
                                                         <p className="text-sm text-gray-100">
                                                             {position.start.toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}

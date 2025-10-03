@@ -18,7 +18,7 @@ export default function NavbarScrollHandler() {
             if (prevScrollPos > currentScrollPos || currentScrollPos < 10) {
             navbar.style.transform = 'translateY(0)';
             } else {
-            navbar.style.transform = 'translateY(-100%)';
+            navbar.style.transform = 'translateY(-112%)';
             }
         }
         
