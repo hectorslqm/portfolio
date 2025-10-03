@@ -30,7 +30,7 @@ const RevealOnScroll: React.FC<RevealOnScrollProps> = ({
           observer.unobserve(entry.target);
         }
       },
-      { threshold: 0.2 }
+      { threshold: .1 }
     );
 
     const currentRef = ref.current;
@@ -42,7 +42,7 @@ const RevealOnScroll: React.FC<RevealOnScrollProps> = ({
   }, []);
 
   const getAnimationClasses = () => {
-    const baseClasses = "transition-all duration-1000 ease-out transform";
+    const baseClasses = "transition-all duration-250 ease-out transform";
     
     if (isVisible) {
       return `${baseClasses} opacity-100 translate-x-0 translate-y-0 scale-100`;
