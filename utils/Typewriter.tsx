@@ -16,7 +16,6 @@ const Typewriter = ({
   const [showCursorState, setShowCursorState] = useState(true);
 
   useEffect(() => {
-    // Reset cuando cambie el texto
     setDisplayed("");
     setIsTyping(true);
     setShowCursorState(true);
@@ -28,7 +27,6 @@ const Typewriter = ({
         i++;
       } else {
         setIsTyping(false);
-        // Hacer desaparecer el cursor después de un breve delay
         setTimeout(() => {
           setShowCursorState(false);
         }, 500);

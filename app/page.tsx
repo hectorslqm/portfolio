@@ -6,56 +6,6 @@ import Image from "next/image";
 import WorkTimeline from "@/components/WorkTimeLine";
 import RevealOnScroll from "@/utils/RevealOnScroll";
 
-// const Cards = () => {
-//   const startYear = 2018;
-//   const currentYear = new Date().getFullYear();
-//   const yearsOfExperience = currentYear - startYear;
-
-//   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
-//   const cards = [
-//     {
-//       id: 1,
-//       title: "Who I Am",
-//       content: "A full-stack developer driven by curiosity and purpose. I thrive on building tech that matters—tools that solve real problems and scale with clarity."
-//     },
-//     {
-//       id: 2,
-//       title: "What I Do",
-//       content: `With ${yearsOfExperience}+ years of experience, I design and build scalable systems—clean, robust, and purpose-driven—using modern stacks like TypeScript, Next.js, Python, and more.`
-//     },
-//     {
-//       id: 3,
-//       title: "My Philosophy",
-//       content: "I approach software like architecture: every line should serve a purpose. Clean code, thoughtful APIs, and collaboration are the foundations of everything I build."
-//     }
-//   ];
-//   return (
-//     // {/* Interactive Cards Section */}
-//     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-//       {cards.map((card) => (
-//         <div
-//           key={card.id}
-//           className={`bg-gray-100 rounded-lg p-6 transition-all duration-500 transform overflow-hidden relative cursor-pointer ${hoveredCard === card.id ? "scale-105 shadow-2xl" : ""
-//             }`}
-//           onMouseEnter={() => setHoveredCard(card.id)}
-//           onMouseLeave={() => setHoveredCard(null)}
-//         >
-//           {/* Glowing border effect on hover */}
-//           <div className={`absolute inset-0 border-4 rounded-lg transition-opacity duration-500 ${hoveredCard === card.id ? "opacity-100 border-yellow-500" : "opacity-0 border-transparent"
-//             }`}></div>
-
-//           <h2 className={`text-xl font-semibold mb-3 relative z-10 transition-colors duration-300 ${hoveredCard === card.id ? "text-black" : "text-slate-900"
-//             }`}>
-//             {card.title}
-//           </h2>
-
-//           <p className="text-slate-800 relative z-10">{card.content}</p>
-//         </div>
-//       ))}
-//     </div>
-//   )
-// }
-
 export default function HomePage() {
   const startYear = 2018;
   const currentYear = new Date().getFullYear();
@@ -106,14 +56,10 @@ export default function HomePage() {
         
           <div className="w-full md:w-2/5 flex justify-center md:justify-end">
             <div className="relative">
-              {/* Contenedor de la imagen con efecto glow interno */}
               <div className="relative w-3/4 h-auto rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/20 transition-transform duration-700 hover:scale-105 bg-black group">
                 
                 <RevealOnScroll direction="left">
-                {/* Aura interna (glow) */}
                 <div className="absolute inset-0 z-0 bg-cyan-400 opacity-15 blur-3xl group-hover:opacity-30 transition-opacity duration-700" />
-
-                {/* Imagen real */}
                   <Image
                     src="/images/me.png"
                     alt="Héctor Lazcano"
