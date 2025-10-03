@@ -35,7 +35,7 @@ const WorkTimeline: React.FC = () => {
                                     transition-all duration-300 group-hover:shadow-xl group-hover:scale-[1.02]">
 
                                     <div className="flex justify-between items-start mb-0 mt-[-2.8rem]">
-                                        <div className="bg-white rounded-2xl border-2 mb-4">
+                                        <div className="bg-white rounded-2xl border-2 mb-4 mr-2">
                                             <a
                                                 href={company.companyWebsite}
                                                 target="_blank"
@@ -43,13 +43,13 @@ const WorkTimeline: React.FC = () => {
                                                 className="hover:underline"
                                                 title={company.companyDescription}
                                             >
-                                                <h3 className="text-2xl font-semibold text-black p-1">{company.company}</h3>
+                                                <h3 className="text-lg sm:text-2xl font-semibold text-black p-1">{company.company}</h3>
                                             </a>
                                         </div>
                                         {/* Company logo */}
                                         {company.logo &&
                                             (
-                                                <div className="w-24 h-24 bg-gray-100 rounded-lg mt-[-.5rem] p-1 flex items-center justify-center">
+                                                <div className="w-28 h-24 bg-gray-100 rounded-lg p-1 flex items-center justify-center">
                                                     {/* eslint-disable-next-line @next/next/no-img-element */}
                                                     <img
                                                         src={company.logo}
@@ -64,7 +64,7 @@ const WorkTimeline: React.FC = () => {
                                     {/* Positions */}
                                     {company.positions.slice().reverse().map((position) => (
                                         <div key={position.position} className="mb-4 pb-4 border-b border-yellow-400 last:border-b-0">
-                                            <div className="flex justify-between items-center">
+                                            <div className="flex justify-between flex-col sm:flex-row sm:items-center">
                                                 <div>
                                                     <h4 className="font-bold text-yellow-500">{position.position}</h4>
                                                     <div className='flex justify-around space-x-8'>
@@ -102,7 +102,7 @@ const WorkTimeline: React.FC = () => {
                                                     </div>
                                                 </div>
                                                 {position.contractType && (
-                                                    <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">
+                                                    <span className="text-xs text-center bg-blue-100 text-blue-800 px-2 py-1 rounded">
                                                         {position.contractType}
                                                     </span>
                                                 )}
