@@ -1,3 +1,4 @@
+'use client';
 import React, { useEffect, useRef, useState } from "react";
 
 const RevealOnScroll: React.FC<{ children: React.ReactNode }> = ({ children }) => {
