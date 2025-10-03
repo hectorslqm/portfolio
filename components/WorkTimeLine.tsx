@@ -12,7 +12,7 @@ const WorkTimeline: React.FC = () => {
 
     return (
         <div className="max-w-4xl mx-auto">
-            <div className="relative border-l-8 border-yellow-500 pl-10 rounded-b-sm">
+            <div className="relative border-l-8 border-yellow-500 pl-6 rounded-b-sm">
                 {sortedWorkHistory.map((company) => {
                     const allPositionsEnded = company.positions.every((position) => position.end);
 
@@ -24,14 +24,14 @@ const WorkTimeline: React.FC = () => {
                                 className="mb-10 relative group"
                             >
                                 {/* Timeline dot */}
-                                <div className={`absolute -left-[calc(0.75rem+46px)] top-[-12] w-7 h-7 rounded-full 
+                                <div className={`absolute -left-[calc(2.7rem)] top-[-12] w-7 h-7 rounded-full 
                                     ${allPositionsEnded ? 'bg-slate-500 group-hover:bg-gray-600' : 'bg-green-500 group-hover:bg-green-600'} 
                                     transition-colors flex items-center justify-center`}>
                                     <div className="w-3 h-3 bg-white rounded-full"></div>
                                 </div>
 
                                 {/* Company Card */}
-                                <div className="shadow-lg rounded-lg p-5 border-2 border-dotted hover:border-yellow-400 bg-gradient-to-tr from-gray-950 to-gray-700
+                                <div className="shadow-lg rounded-lg p-4 border-2 border-dotted hover:border-yellow-400 bg-gradient-to-tr from-gray-950 to-gray-700
                                     transition-all duration-300 group-hover:shadow-xl group-hover:scale-[1.02]">
 
                                     <div className="flex justify-between items-start mb-0 mt-[-2.8rem]">

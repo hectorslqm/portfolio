@@ -15,11 +15,11 @@ export default function HomePage() {
             I specialize in both frontend and backend development using modern technologies like TypeScript, React, Next.js, Python, Java, and SQL/NoSQL databases.`;
 
   return (
-    <div className="min-h-dvh p-8 md:p-6">
+    <div className="min-h-dvh px-4 md:px-6">
       {/* Hero Section with Photo on Right */}
-      <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-12 mb-16 mt-8">
+      <div className="flex flex-col md:flex-row md:items-start justify-between gap-2 mb-16">
         {/* Left side - Text content */}
-        <div className="w-full md:w-3/5">
+        <div className="w-full ">
           <h1 className="text-6xl font-bold mb-4 leading-tight text-white">
             <span className="inline-block relative">
               <span className="text-white">F</span>
@@ -32,6 +32,24 @@ export default function HomePage() {
               <span className="absolute left-2 -bottom-2 w-full h-3 bg-yellow-400 opacity-80 blur-md animate-pulse" />
             </span>
           </h1>
+          <div className="w-full justify-center sm:justify-end flex sm:hidden mb-6">
+          <div className="relative">
+            <div className="relative w-3/4 h-auto rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/20 transition-transform duration-700 hover:scale-105 bg-black group">
+              
+              <RevealOnScroll direction="left">
+              <div className="absolute inset-0 z-0 bg-cyan-400 opacity-15 blur-3xl group-hover:opacity-30 transition-opacity duration-700" />
+                <Image
+                  src="/images/me.png"
+                  alt="Héctor Lazcano"
+                  className="relative z-10 w-full h-full object-cover"
+                  width={700}
+                  height={700}
+                  priority
+                />
+              </RevealOnScroll>
+            </div>
+          </div>
+        </div>
           <RevealOnScroll direction="right">
             <p className="text-slate-300 text-2xl mb-8">
               {mainText}
@@ -53,26 +71,23 @@ export default function HomePage() {
           </div>
         </div>
         {/* Right side - Photo */}
-        
-          <div className="w-full md:w-2/5 flex justify-center md:justify-end">
-            <div className="relative">
-              <div className="relative w-3/4 h-auto rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/20 transition-transform duration-700 hover:scale-105 bg-black group">
-                
-                <RevealOnScroll direction="left">
-                <div className="absolute inset-0 z-0 bg-cyan-400 opacity-15 blur-3xl group-hover:opacity-30 transition-opacity duration-700" />
-                  <Image
-                    src="/images/me.png"
-                    alt="Héctor Lazcano"
-                    className="relative z-10 w-full h-full object-cover"
-                    width={700}
-                    height={700}
-                    priority
-                  />
-                </RevealOnScroll>
-              </div>
+        <div className="w-full justify-center sm:justify-end hidden sm:flex">
+          <div className="relative">
+            <div className="relative w-full h-auto rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/20 transition-transform duration-700 hover:scale-105 bg-black group">
+              <RevealOnScroll direction="left">
+              <div className="absolute inset-0 z-0 bg-cyan-400 opacity-15 blur-3xl group-hover:opacity-30 transition-opacity duration-700" />
+                <Image
+                  src="/images/me.png"
+                  alt="Héctor Lazcano"
+                  className="relative z-10 w-full h-full object-cover"
+                  width={700}
+                  height={700}
+                  priority
+                />
+              </RevealOnScroll>
             </div>
           </div>
-
+        </div>
       </div>
 
 
