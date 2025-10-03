@@ -26,7 +26,7 @@ export default function Contact() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center mt-9 min-h-screen">
+    <div className="flex flex-col items-center justify-center mt-9 min-vh-screen">
       {/* Business Card */}
       <div className="w-full max-w-lg rounded-xl border-4 border-yellow-400 bg-gray-200 shadow-2xl overflow-hidden transform transition-transform hover:scale-105 duration-500">
 

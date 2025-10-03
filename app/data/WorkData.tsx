@@ -37,11 +37,7 @@ export const WorkHistory: WorkHistoryType = [
                 start: createDateUTC("2017-02-01"),
                 end: createDateUTC("2017-08-01"),
                 content: [
-                    "Productive improvement of the Volkswagen’s learning station.",
-                    "Redesign of the doors subjection device used in paint shop process of the VW Golf.Generating a saving of $2USD per device.",
-                    "Design of a Layout and control of personal’s locker availability.",
-                    "Development of a graphical user interface for a better control of the print out of payroll Boucher with a internal web page using PHP and CSS.",
-                    "Development of a graphical user interface for management reports of the productive area PPA."
+                    "Contributed to the development of graphical interfaces using PHP supporting the administrative operations of the Betriebsmanagement system. Took a leading role in advising students at the Learnstation, collaborating closely with them to redesign the door subjection device used in the VW Golf paint shop, achieving 2 USD savings per device. Additionally, optimized the layout and management of personnel locker availability and created interfaces to enhance reporting and operational oversight."
                 ],
                 tags: ["PHP", "CSS", "HTML", "Office 365"],
             }
@@ -54,19 +50,16 @@ export const WorkHistory: WorkHistoryType = [
         companyDescription: "One of the world's leading automobile manufacturers. The company operates a large manufacturing plant in Puebla, Mexico, producing a range of vehicles for both domestic and international markets. With a strong commitment to quality and innovation, Volkswagen de México plays a key role in the global operations of the Volkswagen Group.",
         positions: [
             {
-                position: "I.T. Manager",
+                position: "Software Developer (Freelance)",
                 location: "Ciudad mendoza, Veracruz, Mexico",
                 contractType: "freelance",
                 start: createDateUTC("2017-09-01"),
                 end: createDateUTC("2018-07-01"),
                 content: [
-                    "Development of personal and assistance control using Java language and MySQL database.",
-                    "Storage of fingerprints in databases using biometric scanner Digital Persona U.are.U 4500.",
-                    "Transfer of Personal and vehicles information to a database schema of MySQL.",
-                    "Creation of a corporative web page and corporative mails to give customers a most professional attention.",
-                    "Design of a new image for the company, by creating a better logo."
+                    "Designed and implemented a comprehensive personnel and attendance control system using Java and MySQL, integrating biometric authentication with a Digital Persona U.are.U 4500 scanner. This system served as a key complement to the company’s HR processes, accurately tracking employee hours and improving administrative efficiency.",
+                    "Enhanced and customized the company's MyBusiness POS software by correcting and extending its Visual Basic code to meet specific operational needs, streamlining daily workflows and ensuring reliable performance. Additionally, redesigned the company’s logo and brand identity, delivering a modern and professional corporate image.",
                 ],
-                tags: ["Java Swing", "MySQL", "biometric scanner", "HTML", "CSS", "Photoshop", "Illustrator"],
+                tags: ["Java Swing", "MySQL", "Biometric Scanner", "HTML", "CSS", "My Business POS", "Illustrator"],
             }
         ],
     },
@@ -94,8 +87,8 @@ export const WorkHistory: WorkHistoryType = [
                 start: createDateUTC("2019-01-01"),
                 end: createDateUTC("2019-08-01"),
                 content: [
-                    "Developed C# interfaces and libraries for Modbus communication and Mitsubishi PLC integration for signal and camera monitoring.",
-                    "Configured sensors and developed production monitoring software using Delta PLC.",
+                    "Designed and implemented C# interfaces for Modbus communication and Mitsubishi PLC integration, enabling precise monitoring of signals and cameras across the production line. I also configured sensors and developed production monitoring software using Delta PLC, ensuring real-time visibility of operational performance.",
+                    "Performed preventive maintenance on production equipment, proactively identifying and addressing potential issues to maximize operational uptime and support smooth manufacturing processes. My work contributed to both the reliability of automation systems and the efficiency of production monitoring.",
                 ],
                 tags: ["PLC", "Delta", "C#"],
             }
@@ -104,8 +97,8 @@ export const WorkHistory: WorkHistoryType = [
     {
         company: "SOFICO",
         companyWebsite: "https://sofico.be",
-        // logo: "https://sofico.global/app/themes/sage/public/images/general/logo-sofico.cec1ce.svg",
-        companyDescription: "Sofico is the world’s leading supplier of mission-critical software solutions for automotive finance, leasing, fleet, and mobility management companies, and its software is used by a broad range of renowned leasing companies all over the world. Sofico was founded in 1988 in Ghent, Belgium, and has over 35 years of experience and business expertise in the industry. It is semi-privately owned, independent and currently employs 550 people in 11 offices worldwide. The company has installed its systems in 27 countries worldwide.",
+        logo: "./images/sofico.png",
+        companyDescription: "Sofico is the world's leading supplier of mission-critical software solutions for automotive finance, leasing, fleet, and mobility management companies, and its software is used by a broad range of renowned leasing companies all over the world. Sofico was founded in 1988 in Ghent, Belgium, and has over 35 years of experience and business expertise in the industry. It is semi-privately owned, independent and currently employs 550 people in 11 offices worldwide. The company has installed its systems in 27 countries worldwide.",
         positions: [
             {
                 position: "Java Core Developer",
@@ -114,11 +107,9 @@ export const WorkHistory: WorkHistoryType = [
                 start: createDateUTC("2019-12-01"),
                 end: createDateUTC("2022-04-01"),
                 content: [
-                    "Built and optimized backend features for Volkswagen Mexico, working on Miles, a largescale leasing system using Java.",
-                    "Improved data processing and business logic for Miles software features powered by a SOAP API.",
-                    "OptimizedOracleSQLqueries toenhance performanceandsupport evolving requirements.",
-                    "Resolved critical bugs and improved legacy code quality, navigating a complex codebase with high confidence.",
-                    "Collaborated with international teamsin Agile sprints, delivering solutions across multiple countries and time zones."
+                    "Took ownership of the core backend of Miles, a large-scale vehicle leasing system used not only by Volkswagen Mexico but also by other automotive companies worldwide. I designed and implemented new features, improved business logic, and ensured reliability across mission-critical processes.",
+                    "Solved complex debugging challenges and delivered high-impact solutions, including a major update to the Annex 20 electronic invoicing module, a key regulatory requirement in Mexico. Additionally, I optimized data processing and Oracle SQL queries to enhance performance and support the evolving functional and compliance needs of the platform.",
+                    "Maintained and modernized legacy code, significantly raising system stability and code quality, while collaborating closely with distributed international teams in Agile sprints, delivering back-end solutions across multiple countries and time zones for various automotive clients."
                 ],
                 tags: ["Java", "OracleSQL", "Bitbucket", "Git", "Jira", "Agile"],
             },
@@ -127,7 +118,7 @@ export const WorkHistory: WorkHistoryType = [
     {
         company: "Texas A&M Transportation Institute",
         companyWebsite: "https://tti.tamu.edu",
-        // logo: "https://tti.tamu.edu/wp-content/themes/tti18/images/tti-logo-rgb.svg",
+        logo: "./images/TTI.png",
         companyDescription: "Texas A&M Transportation Institute (TTI) is a state agency and a member of The Texas A&M University System. The research program at TTI addresses the mobility challenges of the 21st century, with an emphasis on safety and security, reliability and resiliency, and sustainability.",
         positions: [
             {
@@ -137,9 +128,9 @@ export const WorkHistory: WorkHistoryType = [
                 start: createDateUTC("2022-04-01"),
                 end: createDateUTC("2024-08-01"),
                 content: [
-                    "Configured Linux Azure server for real-time UDP data ingestion.",
-                    "Designed initial PostgreSQL schema and developed the first Python REST API.",
-                    "Built first React dashboard with Material UI and Azure AD authentication.",
+                    "Responsible for connecting different systems and initiating tests to ensure seamless integration.",
+                    "Developed the first version of a Flask API to process information collected by our systems.",
+                    "Extracted any necessary information required by our clients, ensuring data accuracy and reliability."
                 ],
                 tags: ["Python", "Javascript", "React", "PostgreSQL", "Azure", "Github"],
             },
@@ -149,10 +140,8 @@ export const WorkHistory: WorkHistoryType = [
                 location: "College Station, Texas, USA",
                 start: createDateUTC("2024-08-01"),
                 content: [
-                    "Promoted from Developer I after demonstrating leadership and technical excellence.",
-                    "Developed a scalable Python REST API to power a real-time reporting system using roadside sensor data, with JWT authentication and PostgreSQL as the main database.",
-                    "Developed dashboards from scratch using Next.js (TypeScript), Tailwind CSS, and SSR for better performance and SEO.",
-                    "Led a development team, managing tasks, code reviews, and mentoring interns and junior developers.",
+                    "Promoted from Software Developer I to Software Developer II, leading a team of developers while contributing across the full stack. I designed and implemented a complete system for vehicle travel times data analysis, consisting of two components: a multithreaded Python service that collects UDP data streams from vehicles and stores them in a PostgreSQL database, handling large volumes of real-time data, and a separate Python API that processes the collected data to generate accurate typical travel times using Flask, Pandas, Polars and dynamic mathematical models.",
+                    "I also develop high-performance, real-time dashboards with React, NextJS, TypeScript, Tailwind CSS, and Shadcn UI, optimized for SEO and user experience. Additionally, I manage database design, Linux Azure server configurations, and CI/CD pipelines with GitHub Actions, ensuring scalable and reliable deployments. My work spans the full lifecycle of data ingestion, processing, and visualization, delivering actionable insights that inform transportation research and decision-making."
                 ],
                 tags: ["Python", "Javascript", "React", "PostgreSQL", "Azure", "Github", "ClickUp"],
             },

@@ -88,8 +88,8 @@ export default function HomePage() {
             {`I'm open to new opportunities where I can continue learning, growing, and making an impact through great software.`}
           </p>
           <div className="flex space-x-4">
-            <Link href="/portfolio" className="px-6 py-3 bg-yellow-400 hover:bg-yellow-500 text-black rounded-md transition-colors duration-300 flex items-center space-x-2">
-              <span>View Portfolio</span>
+            <Link href="/projects" className="px-6 py-3 bg-yellow-400 hover:bg-yellow-500 text-black rounded-md transition-colors duration-300 flex items-center space-x-2">
+              <span>View Projects</span>
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
               </svg>
@@ -101,21 +101,22 @@ export default function HomePage() {
         </div>
 
         {/* Right side - Photo */}
-        <div className="w-full md:w-2/5 flex justify-center md:justify-end ">
+        <div className="w-full md:w-2/5 flex justify-center md:justify-end">
           <div className="relative">
-            {/* Image container with internal glow effect */}
-            <div className="relative w-3/4 h-auto rounded-2xl overflow-hidden shadow-xl ring-1 ring-white/10 transition-transform duration-500 hover:scale-105 bg-black group">
-              {/* Aura light inside the frame */}
-              <div className="absolute inset-0 z-0 bg-cyan-400 opacity-20 blur-2xl group-hover:opacity-30 transition-opacity duration-500" />
+            {/* Contenedor de la imagen con efecto glow interno */}
+            <div className="relative w-3/4 h-auto rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/20 transition-transform duration-700 hover:scale-105 bg-black group">
+              
+              {/* Aura interna (glow) */}
+              <div className="absolute inset-0 z-0 bg-cyan-400 opacity-15 blur-3xl group-hover:opacity-30 transition-opacity duration-700" />
 
-              {/* Actual image */}
+              {/* Imagen real */}
               <Image
                 src="/images/me.png"
                 alt="Héctor Lazcano"
-                className="relative z-10 w-full h-auto object-contain"
-                width={500} // Adjust width as needed
-                height={500} // Adjust height as needed
-                priority // Optional: Use priority for LCP optimization
+                className="relative z-10 w-full h-full object-cover"
+                width={700}
+                height={700}
+                priority
               />
             </div>
           </div>

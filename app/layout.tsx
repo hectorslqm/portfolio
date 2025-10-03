@@ -18,12 +18,14 @@ export default function RootLayout({
     <html lang="en">
       <body className="min-h-screen relative overflow-x-hidden bg-black">
         {/* Background wrapper */}
-        <Navbar />
+        <div className="w-full max-w-[110rem] mx-auto">
+          <Navbar />
+        </div>
         <NavbarScrollHandler />
         {/* Decorative "waves" at the top*/}
         {/* <div className="relative h-50 overflow-hidden w-[140%] -left-[10%]">
         </div> */}
-        <div className="relative z-0 pt-20 text-white">
+        <div className="relative z-0 pt-20 max-w-[110rem] mx-auto text-white">
           {/*The content*/}
           {children}
         </div>
