@@ -55,7 +55,7 @@ export default function HomePage() {
   return (
     <div className="min-h-dvh">
       {/* Hero Section with Photo on Right */}
-      <section className="from-sky-950 to-black bg-gradient-to-tl via-[1%] via-sky-900 mt-[-6rem] pt-29 mb-2">
+      <section className="from-sky-950 to-black bg-gradient-to-tl via-[1%] via-sky-900 mt-[-6rem] pt-29 pb-2">
         <div className="mx-auto px-4 md:px-6 max-w-[110rem] flex flex-col md:flex-row md:items-start justify-between gap-2">
           <div className="w-full">
             <h1 className="text-6xl font-bold mb-4 leading-tight text-white">
