@@ -27,23 +27,23 @@ export default function Contact() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center mt-9 min-vh-screen">
+    <div className="max-w-[110rem] mx-auto flex flex-col items-center justify-center mt-2">
       {/* Business Card */}
       <RevealOnScroll>
 
         <div className="w-full max-w-lg rounded-xl border-4 border-yellow-400 bg-gray-200 shadow-2xl overflow-hidden transform transition-transform hover:scale-105 duration-500">
 
           {/* Card Content */}
-          <div className="p-8">
+          <div className="p-6">
             {/* Name and title */}
-            <div className="text-center mb-8">
+            <div className="text-center mb-2">
               <h1 className="text-3xl font-bold text-slate-800 mb-2">Hector S. Lazcano</h1>
               <p className="text-yellow-600 text-lg">Full Stack Developer</p>
               <div className="w-16 h-1 bg-yellow-600 mx-auto mt-4 rounded-full"></div>
             </div>
 
             {/* Contact Information */}
-            <div className="space-y-4 mb-8">
+            <div className="space-y-4 mb-2">
               {/* Phone */}
               <div className="flex items-center space-x-4 text-slate-300 hover:text-yellow-400 transition-colors duration-300">
                 <div className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center flex-shrink-0">
@@ -87,10 +87,10 @@ export default function Contact() {
 
             {/* Technology Icons */}
             <div>
-              <h2 className="text-slate-900 text-lg mb-4">Technologies</h2>
+              <h2 className="text-slate-900 text-lg mb-2">Technologies</h2>
               <div className="grid grid-cols-3 md:grid-cols-7 gap-2">
                 {technologies.map((tech, index) => (
-                  <div key={index} className="flex flex-col items-center w-12 h-12 rounded-full justify-center mb-2 bg-slate-900">
+                  <div key={index} className="flex flex-col items-center w-12 h-12 rounded-full justify-center mb-2 bg-black backdrop-blur-lg">
                     <Image
                       src={Tags[tech.name]}
                       alt={tech.name}

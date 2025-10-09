@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="grid-col-1 min-h-screen relative overflow-x-hidden bg-gradient-to-b from-black via-95% via-gray-800 to-gray-900">
+      <body className="grid-col-1 min-h-svh relative overflow-x-hidden bg-gradient-to-b from-gray-950 via-95% via-gray-900 to-gray-950">
         {/* Background wrapper */}
         <div className="w-full max-w-[110rem] mx-auto">
           <Navbar />
@@ -25,13 +25,13 @@ export default function RootLayout({
         {/* Decorative "waves" at the top*/}
         {/* <div className="relative h-50 overflow-hidden w-[140%] -left-[10%]">
         </div> */}
-        <div className="z-0 pt-22 max-w-[110rem] min-h-svh mx-auto text-white">
+        <div className="z-0 pt-22 min-h-screen text-white">
           {/*The content*/}
           {children}
         </div>
         {/* Decorative "waves" at the bottom*/}
         {/* <div className="bg-red-300 overflow-hidden"> */}
-          <div className="relative h-65 overflow-hidden">
+          <div className="relative h-75 overflow-hidden">
           <svg
             viewBox="0 45 1200 65"
             preserveAspectRatio="none"

@@ -34,7 +34,7 @@ function Navbar() {
         setIsMenuOpen(false);
     };
     return (
-        <nav id="navbar" className="border-yellow-500 mt-2 border-2 rounded-3xl fixed w-full max-w-[110rem] left-1/2 transform -translate-x-1/2 p-4 flex flex-wrap shadow-xl backdrop-blur-sm z-50 bg-gray-900/90">
+        <nav id="navbar" className="mt-4 rounded-full px-8 py-4 fixed w-full max-w-[110rem] flex flex-wrap shadow-sm shadow-black backdrop-blur-xs z-50 bg-slate-900/90">
             {/* Large Screen*/}
             <div className="hidden flex-grow lg:flex lg:items-center lg:w-auto space-x-4">
                 <div>

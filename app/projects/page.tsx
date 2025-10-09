@@ -19,7 +19,7 @@ function Projects() {
     })
 
     return (
-        <div className="min-h-screen">
+        <div className="min-h-screen mx-auto max-w-[110rem]">
                 <div className="flex flex-col justify-center items-center">
                     <span className="text-4xl font-bold text-white">My Projects</span>
                     <span className="text-slate-400 text-sm">A collection of my personal repositories</span>

@@ -11,7 +11,7 @@ const WorkTimeline: React.FC = () => {
     });
 
     return (
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl px-4 md:px-6 mx-auto">
             <div className="relative border-l-8 border-yellow-500 pl-6 rounded-b-sm">
                 {sortedWorkHistory.map((company) => {
                     const allPositionsEnded = company.positions.every((position) => position.end);
