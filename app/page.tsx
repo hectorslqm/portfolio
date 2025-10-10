@@ -55,19 +55,18 @@ export default function HomePage() {
   return (
     <div className="min-h-dvh">
       {/* Hero Section with Photo on Right */}
-      <section className="from-sky-950 to-black bg-gradient-to-tl via-[1%] via-sky-900 mt-[-6rem] pt-29 pb-2">
+      <section className="from-sky-950 to-black bg-gradient-to-tl via-[1%] via-sky-900 mt-[-6rem] pt-29">
         <div className="mx-auto px-4 md:px-6 max-w-[110rem] flex flex-col md:flex-row md:items-start justify-between gap-2">
-          <div className="w-full">
+          <div className="w-full pb-2">
             <h1 className="text-6xl font-bold mb-4 leading-tight text-white">
               <span className="inline-block relative">
-                <span className="text-white">F</span>
-                <span className="text-yellow-400">ull</span>
-                <span className="text-white">-</span>
-                <span className="text-white">S</span>
-                <span className="text-yellow-400">tack</span>
-                <span className="text-white"> D</span>
-                <span className="text-yellow-400">eveloper</span>
+                <span className="text-yellow-400"><Typewriter text="Full-Stack"/></span>
                 <span className="absolute left-2 -bottom-0 w-full h-4 bg-yellow-400 opacity-80 blur-md animate-pulse" />
+              </span>
+              <span> </span>
+              <span className="inline-block relative">
+                <span className="text-white"><Typewriter text=" Developer" delay={1600}/></span>
+                <span className="absolute left-2 -bottom-0 w-full h-4 bg-white opacity-80 blur-md animate-pulse" />
               </span>
             </h1>
             <div className="w-full">
@@ -145,7 +144,7 @@ export default function HomePage() {
       </section>
 
       {/* Experience*/}
-      <section className="bg-slate-100 border-t-8 border-yellow-400 mb-18">
+      <section className="from-gray-50 to-gray-300 bg-gradient-to-b border-t-8 border-yellow-400 mb-18">
         <div className="mx-auto px-4 md:px-6 max-w-[110rem] py-8 w-full">
           <div className="text-slate-900">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

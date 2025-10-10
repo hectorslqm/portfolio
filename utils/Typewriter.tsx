@@ -4,38 +4,59 @@ const Typewriter = ({
   text,
   speed = 100,
   showCursor = true,
-  cursorChar = "_"
+  cursorChar = "_",
+  delay = 0
 }: {
   text: string;
   speed?: number;
   showCursor?: boolean;
   cursorChar?: string;
+  delay?: number;
 }) => {
   const [displayed, setDisplayed] = useState("");
   const [isTyping, setIsTyping] = useState(true);
-  const [showCursorState, setShowCursorState] = useState(true);
+  const [showCursorState, setShowCursorState] = useState(false);
 
   useEffect(() => {
     setDisplayed("");
     setIsTyping(true);
-    setShowCursorState(true);
+    setShowCursorState(false);
 
-    let i = 0;
-    const interval = setInterval(() => {
-      if (i < text.length) {
-        setDisplayed(text.slice(0, i + 1));
-        i++;
-      } else {
-        setIsTyping(false);
-        setTimeout(() => {
-          setShowCursorState(false);
-        }, 500);
-        clearInterval(interval);
-      }
-    }, speed);
+    const startTyping = () => {
+      setShowCursorState(true);
+      let i = 0;
+      const interval = setInterval(() => {
+        if (i < text.length) {
+          setDisplayed(text.slice(0, i + 1));
+          i++;
+        } else {
+          setIsTyping(false);
+          setTimeout(() => {
+            setShowCursorState(false);
+          }, 500);
+          clearInterval(interval);
+        }
+      }, speed);
 
-    return () => clearInterval(interval);
-  }, [text, speed]);
+      return interval;
+    };
+
+    let timeoutId: NodeJS.Timeout;
+    let intervalId: NodeJS.Timeout;
+
+    if (delay > 0) {
+      timeoutId = setTimeout(() => {
+        intervalId = startTyping();
+      }, delay);
+    } else {
+      intervalId = startTyping();
+    }
+
+    return () => {
+      if (timeoutId) clearTimeout(timeoutId);
+      if (intervalId) clearInterval(intervalId);
+    };
+  }, [text, speed, delay]);
 
   return (
     <span className="relative inline-block">
