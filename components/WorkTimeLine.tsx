@@ -42,6 +42,7 @@ const WorkTimeline: React.FC = () => {
                                                 rel="noopener noreferrer"
                                                 className="hover:underline"
                                                 title={company.companyDescription}
+                                                aria-label={`opens ${company.company} website in a new window`}
                                             >
                                                 <h3 className="text-lg sm:text-2xl font-semibold text-black p-1">{company.company}</h3>
                                             </a>

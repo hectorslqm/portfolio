@@ -27,18 +27,18 @@ export default function Contact() {
   ];
 
   return (
-    <div className="max-w-[110rem] mx-auto flex flex-col items-center justify-center mt-2">
+    <div className="max-w-[110rem] mx-auto flex flex-col items-center justify-center mt-4">
       {/* Business Card */}
       <RevealOnScroll>
 
-        <div className="w-full max-w-lg rounded-xl border-4 border-yellow-400 bg-gray-200 shadow-2xl overflow-hidden transform transition-transform hover:scale-105 duration-500">
+        <div className="w-full max-w-lg rounded-xl border-4 border-yellow-400 from-gray-100 to-gray-300 bg-gradient-to-b shadow-2xl overflow-hidden transform transition-transform hover:scale-105 duration-500">
 
           {/* Card Content */}
           <div className="p-6">
             {/* Name and title */}
             <div className="text-center mb-2">
-              <h1 className="text-3xl font-bold text-slate-800 mb-2">Hector S. Lazcano</h1>
-              <p className="text-yellow-600 text-lg">Full Stack Developer</p>
+              <h1 className="text-3xl font-bold text-slate-800 mb-2">Héctor S. Lazcano</h1>
+              <p className="text-yellow-600 text-lg">Full-Stack Developer</p>
               <div className="w-16 h-1 bg-yellow-600 mx-auto mt-4 rounded-full"></div>
             </div>
 
@@ -51,7 +51,7 @@ export default function Contact() {
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                   </svg>
                 </div>
-                <a href={`tel:${contactInfo.phone}`} className="text-slate-800 hover:underline">{contactInfo.phone}</a>
+                <a href={`tel:${contactInfo.phone}`} className="text-slate-800 hover:underline" aria-label="Call Phone Number">{contactInfo.phone}</a>
               </div>
 
               {/* Email */}
@@ -62,7 +62,7 @@ export default function Contact() {
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                   </svg>
                 </div>
-                <a href={`mailto:${contactInfo.email}`} className="text-slate-800 hover:underline">{contactInfo.email}</a>
+                <a href={`mailto:${contactInfo.email}`} className="text-slate-800 hover:underline" aria-label="Send Email">{contactInfo.email}</a>
               </div>
 
               {/* GitHub */}
@@ -72,7 +72,7 @@ export default function Contact() {
                     <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577v-2.234c-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.807 1.305 3.492.997.108-.775.418-1.305.76-1.605-2.665-.305-5.467-1.335-5.467-5.93 0-1.31.467-2.38 1.235-3.22-.123-.303-.535-1.523.117-3.176 0 0 1.007-.322 3.3 1.23a11.52 11.52 0 013.003-.403c1.02.005 2.045.137 3.003.403 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.24 2.873.117 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.807 5.62-5.48 5.92.43.37.823 1.1.823 2.22v3.293c0 .32.217.694.827.576C20.565 21.796 24 17.297 24 12c0-6.63-5.37-12-12-12z" />
                   </svg>
                 </div>
-                <Link href="https://github.com/hectorslqm/" className="text-slate-800">{contactInfo.gitHub}</Link>
+                <Link href="https://github.com/hectorslqm/" className="text-slate-800" aria-label="Open Github">{contactInfo.gitHub}</Link>
               </div>
               {/* Location */}
               <div className="flex items-center space-x-4 text-slate-300 hover:text-yellow-400 transition-colors duration-300">
@@ -81,22 +81,22 @@ export default function Contact() {
                     <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <Link href="https://maps.app.goo.gl/So7rBUKWii3rsUgU8" className="text-slate-800">{contactInfo.location}</Link>
+                <Link href="https://maps.app.goo.gl/So7rBUKWii3rsUgU8" className="text-slate-800" aria-label="Open Location">{contactInfo.location}</Link>
               </div>
             </div>
 
             {/* Technology Icons */}
             <div>
-              <h2 className="text-slate-900 text-lg mb-2">Technologies</h2>
+              <h2 className="text-slate-900 text-lg mb-2">Expertise</h2>
               <div className="grid grid-cols-3 md:grid-cols-7 gap-2">
                 {technologies.map((tech, index) => (
-                  <div key={index} className="flex flex-col items-center w-12 h-12 rounded-full justify-center mb-2 bg-black backdrop-blur-lg">
+                  <div key={index} className="flex flex-col items-center w-12 h-12 rounded-full justify-center mb-2">
                     <Image
                       src={Tags[tech.name]}
-                      alt={tech.name}
-                      width={32}
-                      height={32}
-                      className="w-8 h-8"
+                      alt={`${tech.name} icon`}
+                      width={40}
+                      height={40}
+                      className="w-10 h-10"
                     />
                   </div>
                 ))}
@@ -109,6 +109,7 @@ export default function Contact() {
             <Link
               href="https://www.linkedin.com/in/hector-lazcano-qm/"
               target="_blank"
+              aria-label="Open Linked-In"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors flex items-center justify-center"
             >

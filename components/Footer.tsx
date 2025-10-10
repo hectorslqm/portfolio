@@ -6,7 +6,23 @@ function Footer() {
       <div className="mx-auto px-4 flex justify-between items-center">
         {/* Copyright */}
         <div className="text-lg text-white">
-          <p>© {new Date().getFullYear()} Hector S. Lazcano</p>
+          <p>© {new Date().getFullYear()} Héctor S. Lazcano</p>
+          <p className="text-sm text-slate-400">
+            <span>Site Map</span>
+            <br />
+            <span> | </span>
+            <Link href="/" className="hover:text-white transition-colors" aria-label="Go to Home">
+              Home
+            </Link>
+            <span> | </span>
+            <Link href="/projects" className="hover:text-white transition-colors" aria-label="Go to Projects">
+              Projects
+            </Link>
+            <span> | </span>
+            <Link href="/contact" className="hover:text-white transition-colors" aria-label="Go to Contact">
+              Contact
+            </Link>
+          </p>
         </div>
 
         {/*Contact*/}
@@ -18,7 +34,7 @@ function Footer() {
               rel="noopener noreferrer"
               className="hover:text-white transition-colors "
             >
-            <span className="[&>svg]:h-5 [&>svg]:w-5">
+            <span className="[&>svg]:h-5 [&>svg]:w-5" aria-label="GitHub Profile">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -34,7 +50,7 @@ function Footer() {
               rel="noopener noreferrer"
               className="hover:text-white transition-colors "
             >
-              <span className="[&>svg]:h-5 [&>svg]:w-5">
+              <span className="[&>svg]:h-5 [&>svg]:w-5" aria-label="LinkedIn Profile">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -46,17 +62,17 @@ function Footer() {
             </Link> 
           </p>
           <p>
-            <Link href="tel:+19793262670" className="hover:text-white transition-colors">
+            <Link href="tel:+19793262670" className="hover:text-white transition-colors" aria-label="Call Phone Number">
               +1 (979) 3 26 26 70
             </Link>
           </p>
           <p>
-            <Link href="mailto:hectorslqm@gmail.com" className="hover:text-white transition-colors">
+            <Link href="mailto:hectorslqm@gmail.com" className="hover:text-white transition-colors" aria-label="Send Email to hectorslqm@gmail.com">
               hectorslqm@gmail.com
             </Link>
           </p>
           <p>
-            <Link href="https://maps.app.goo.gl/sG7Anx8cqFj4pmaK6">
+            <Link href="https://maps.app.goo.gl/sG7Anx8cqFj4pmaK6" aria-label="Location">
               College Station, TX
             </Link>
           </p>

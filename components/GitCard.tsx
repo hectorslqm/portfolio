@@ -1,30 +1,30 @@
 import React from "react";
+import Image from "next/image";
 import { RepositoriesType } from "@/app/data/Repositories";
 import { Tags } from "@/app/data/Tags";
 
 type Repository = RepositoriesType[number]
 
 const Tag: React.FC<{ tagName: keyof typeof Tags }> = ({ tagName }) => (
-  <span className="p-2 text-xs font-medium bg-gray-200 border-2 border-gray-200 rounded-full">
-    <img src={Tags[tagName]} alt={tagName} className="inline-block w-6 h-6" />
-  </span>
+    <Image src={Tags[tagName]} alt={tagName} width={24} height={24} className="inline-block w-6 h-6" />
 );
 
 const GitCard: React.FC<{ props: Repository }> = ({ props }) => {
   return (
-    <div className="border-4 border-double border-yellow-400 bg-gray-950 rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 hover:scale-105 flex flex-col h-full">
+    <div className="border-4 border-double border-gray-100 bg-gray-950 rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 hover:scale-105 flex flex-col h-full">
       <div className="p-4 flex-grow">
         <h3 className="text-xl font-bold text-white mb-2">{props.title}</h3>
         <p className="text-gray-300 mb-4">{props.description}</p>
       </div>
-      <div className="flex bg-yellow-400 p-2 justify-between mt-auto">
-        <div className="flex flex-wrap gap-2">
+      <div className="flex from-gray-50 to-gray-200 bg-gradient-to-br p-2 justify-between mt-auto">
+        <div className="flex flex-wrap items-center gap-2">
           {props.tags.map((tag, index) => (
             <Tag key={index} tagName={tag as keyof typeof Tags} />
           ))}
         </div>
         <a
           href={props.url}
+          aria-label={`View ${props.title} Repository`}
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-900 transition-colors flex items-center space-x-2"

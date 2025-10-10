@@ -71,6 +71,7 @@ function Navbar() {
                         href="/projects" 
                         className="block text-sm py-2 text-slate-400 hover:text-white"
                         onClick={closeMenu}
+                        aria-label="Open Projects"
                     >
                         Projects
                     </Link>
@@ -78,6 +79,7 @@ function Navbar() {
                         href="/contact" 
                         className="block text-sm py-2 text-slate-400 hover:text-white"
                         onClick={closeMenu}
+                        aria-label="Open Contact"
                     >
                         Contact
                     </Link>
@@ -87,6 +89,7 @@ function Navbar() {
                         download="Hector Lazcano CV.pdf" 
                         className="inline-block text-sm px-2 py-2 leading-none border rounded text-white border-yellow-500 hover:border-transparent hover:bg-yellow-500 hover:text-black transition-colors duration-300"
                         onClick={closeMenu}
+                        aria-label="Download CV"
                     >
                         Download CV
                     </a>
@@ -94,7 +97,7 @@ function Navbar() {
             </div>
             <div className="flex items-center flex-grow justify-end text-white mr-1">
                 <Link href="/">
-                    <span className="font-semibold text-lg tracking-tight hover:text-xl hover:underline hover:text-yellow-500">Hector S. Lazcano</span>
+                    <span className="font-semibold text-lg tracking-tight hover:text-xl hover:underline hover:text-yellow-500" aria-label="Go to Home">Héctor S. Lazcano</span>
                 </Link>
             </div>
         </nav>

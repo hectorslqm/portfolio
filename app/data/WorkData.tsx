@@ -46,7 +46,6 @@ export const WorkHistory: WorkHistoryType = [
     {
         company: "El Faro Ferreterias",
         logo: "./images/faro.jpg",
-        companyWebsite: "https://elfaroferreterias.com/index.html",
         companyDescription: "One of the world's leading automobile manufacturers. The company operates a large manufacturing plant in Puebla, Mexico, producing a range of vehicles for both domestic and international markets. With a strong commitment to quality and innovation, Volkswagen de México plays a key role in the global operations of the Volkswagen Group.",
         positions: [
             {

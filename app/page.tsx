@@ -57,7 +57,7 @@ export default function HomePage() {
       {/* Hero Section with Photo on Right */}
       <section className="from-sky-950 to-black bg-gradient-to-tl via-[1%] via-sky-900 mt-[-6rem] pt-29">
         <div className="mx-auto px-4 md:px-6 max-w-[110rem] flex flex-col md:flex-row md:items-start justify-between gap-2">
-          <div className="w-full pb-2">
+          <div className="w-full pb-4">
             <h1 className="text-6xl font-bold mb-4 leading-tight text-white">
               <span className="inline-block relative">
                 <span className="text-yellow-400"><Typewriter text="Full-Stack"/></span>
@@ -104,13 +104,13 @@ export default function HomePage() {
               </div>
             </RevealOnScroll>
             <div className="flex space-x-4">
-              <Link href="/projects" className="px-6 py-3 bg-yellow-400 hover:bg-yellow-500 text-black rounded-md transition-colors duration-300 flex items-center space-x-2">
+              <Link href="/projects" className="px-6 py-3 bg-yellow-400 hover:bg-yellow-500 hover:shadow-lg hover:shadow-yellow-500/25 hover:scale-105 text-black rounded-md transition-colors duration-300 flex items-center space-x-2">
                 <span>View Projects</span>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
               </Link>
-              <Link href="/contact" className="px-6 py-3 border border-yellow-500 text-yellow-500 hover:text-black hover:bg-yellow-500 hover:bg-opacity-10 rounded-md transition-colors duration-300">
+              <Link href="/contact" className="px-6 py-3 border border-yellow-500 hover:shadow-lg hover:shadow-yellow-500/25 hover:scale-105 text-yellow-500 hover:text-black hover:bg-yellow-500 hover:bg-opacity-10 rounded-md transition-colors duration-300">
                 <Typewriter text="Contact Me" speed={85} />
               </Link>
             </div>
@@ -128,7 +128,7 @@ export default function HomePage() {
                   <RevealOnScroll direction="left">
                     <Image
                       src="/images/me.png"
-                      alt="Héctor Lazcano"
+                      alt="Héctor Lazcano Photo"
                       className="relative z-10 w-full h-full object-cover"
                       sizes="250rem"
                       width={0}
