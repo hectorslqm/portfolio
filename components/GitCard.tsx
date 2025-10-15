@@ -11,12 +11,12 @@ const Tag: React.FC<{ tagName: keyof typeof Tags }> = ({ tagName }) => (
 
 const GitCard: React.FC<{ props: Repository }> = ({ props }) => {
   return (
-    <div className="border-4 border-double border-gray-100 bg-gray-950 rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 hover:scale-105 flex flex-col h-full">
+    <div className=" bg-gray-950 ring ring-amber-400 rounded-xl shadow-sm shadow-slate-700 overflow-hidden hover:shadow-xl transition-shadow duration-300 hover:scale-105 flex flex-col h-full">
       <div className="p-4 flex-grow">
         <h3 className="text-xl font-bold text-white mb-2">{props.title}</h3>
-        <p className="text-gray-300 mb-4">{props.description}</p>
+        <p className="text-gray-400 mb-4">{props.description}</p>
       </div>
-      <div className="flex from-gray-50 to-gray-200 bg-gradient-to-br p-2 justify-between mt-auto">
+      <div className="flex from-gray-50 to-yellow-400 bg-gradient-to-r p-2 justify-between mt-auto">
         <div className="flex flex-wrap items-center gap-2">
           {props.tags.map((tag, index) => (
             <Tag key={index} tagName={tag as keyof typeof Tags} />

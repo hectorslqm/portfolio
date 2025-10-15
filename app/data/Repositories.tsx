@@ -53,7 +53,7 @@ export const Repositories: RepositoriesType = [
     },
     {
         title: "Configure WSL",
-        description: "I just this project to configure my entire WSL Environment with bash scripts",
+        description: "I use this project to setup my entire WSL Environment with bash scripts",
         url: "https://github.com/hectorslqm/configureWSL",
         tags: ["Bash", "Linux"],
         type: "public"
