@@ -1,11 +1,10 @@
-'use client'
+"use client";
 import React from "react";
 import Link from "next/link";
 import Typewriter from "@/utils/Typewriter";
 import Image from "next/image";
 import WorkTimeline from "@/components/WorkTimeLine";
 import RevealOnScroll from "@/utils/RevealOnScroll";
-
 
 export default function HomePage() {
   const startYear = 2018;
@@ -15,12 +14,17 @@ export default function HomePage() {
   const mainTextParagraphs = [
     () => (
       <div className="text-white">
-        Hi, I&apos;m Héctor, a Full Stack Developer passionate about turning complex ideas into scalable, reliable, and user-centered software solutions.
+        Hi, I&apos;m Héctor, a Full Stack Developer passionate about turning
+        complex ideas into scalable, reliable, and user-centered software
+        solutions.
       </div>
     ),
     () => (
       <div className="text-slate-400">
-        I help companies build and scale modern applications that are not only high-performance but also maintainable in the long run. My work bridges the gap between business goals and technical execution, making sure products are both effective and enjoyable to use.
+        I help companies build and scale modern applications that are not only
+        high-performance but also maintainable in the long run. My work bridges
+        the gap between business goals and technical execution, making sure
+        products are both effective and enjoyable to use.
       </div>
     ),
   ];
@@ -30,11 +34,13 @@ export default function HomePage() {
       title: "My Experience",
       description: () => (
         <>
-          With over <strong>{yearsOfExperience}</strong> years of experience in frontend and backend development, I specialize in{" "}
-          <strong>TypeScript</strong>, <strong>React</strong>, <strong>Next.js</strong>, <strong>Python</strong>, <strong>Java</strong>, and{" "}
-          <strong>SQL/NoSQL</strong> databases.
-          <br />
-          I love designing responsive interfaces, optimizing data workflows, and architecting cloud-ready, scalable systems.
+          With over <strong>{yearsOfExperience}</strong> years of experience in
+          frontend and backend development, I specialize in{" "}
+          <strong>TypeScript</strong>, <strong>React</strong>,{" "}
+          <strong>Next.js</strong>, <strong>Python</strong>,{" "}
+          <strong>Java</strong>, and <strong>SQL/NoSQL</strong> databases.
+          <br />I love designing responsive interfaces, optimizing data
+          workflows, and architecting cloud-ready, scalable systems.
         </>
       ),
     },
@@ -42,7 +48,8 @@ export default function HomePage() {
       title: "My Mission",
       description: () => (
         <>
-          I’m on a mission to help teams move faster, ship better code, and deliver real value through technology that lasts.
+          I’m on a mission to help teams move faster, ship better code, and
+          deliver real value through technology that lasts.
         </>
       ),
     },
@@ -60,12 +67,16 @@ export default function HomePage() {
           <div className="w-full pb-4">
             <h1 className="text-6xl font-bold mb-4 leading-tight text-white">
               <span className="inline-block relative">
-                <span className="text-yellow-400"><Typewriter text="Full-Stack"/></span>
+                <span className="text-yellow-400">
+                  <Typewriter text="Full-Stack" />
+                </span>
                 <span className="absolute left-2 -bottom-0 w-full h-4 bg-yellow-400 opacity-80 blur-md animate-pulse" />
               </span>
               <span> </span>
               <span className="inline-block relative">
-                <span className="text-white"><Typewriter text=" Developer" delay={1600}/></span>
+                <span className="text-white">
+                  <Typewriter text=" Developer" delay={1600} />
+                </span>
                 <span className="absolute left-2 -bottom-0 w-full h-4 bg-white opacity-80 blur-md animate-pulse" />
               </span>
             </h1>
@@ -96,21 +107,39 @@ export default function HomePage() {
             <RevealOnScroll direction="right">
               <div className="mb-8">
                 {mainTextParagraphs.map((paragraph, index) => (
-                    <div key={index} className="text-2xl leading-relaxed text-justify">
-                      <br />
-                      {paragraph()}
-                    </div>
+                  <div
+                    key={index}
+                    className="text-2xl leading-relaxed text-justify"
+                  >
+                    <br />
+                    {paragraph()}
+                  </div>
                 ))}
               </div>
             </RevealOnScroll>
             <div className="flex space-x-4">
-              <Link href="/projects" className="px-6 py-3 bg-yellow-400 hover:bg-yellow-500 hover:shadow-lg hover:shadow-yellow-500/25 hover:scale-105 text-black rounded-md transition-colors duration-300 flex items-center space-x-2">
+              <Link
+                href="/projects"
+                className="px-6 py-3 bg-yellow-400 hover:bg-yellow-500 hover:shadow-lg hover:shadow-yellow-500/25 hover:scale-105 text-black rounded-md transition-colors duration-300 flex items-center space-x-2"
+              >
                 <span>View Projects</span>
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
                 </svg>
               </Link>
-              <Link href="/contact" className="px-6 py-3 border border-yellow-500 hover:shadow-lg hover:shadow-yellow-500/25 hover:scale-105 text-yellow-500 hover:text-black hover:bg-yellow-500 hover:bg-opacity-10 rounded-md transition-colors duration-300">
+              <Link
+                href="/contact"
+                className="px-6 py-3 border border-yellow-500 hover:shadow-lg hover:shadow-yellow-500/25 hover:scale-105 text-yellow-500 hover:text-black hover:bg-yellow-500 hover:bg-opacity-10 rounded-md transition-colors duration-300"
+              >
                 <Typewriter text="Contact Me" speed={85} />
               </Link>
             </div>
@@ -120,7 +149,7 @@ export default function HomePage() {
             <div className="w-full justify-center sm:justify-end hidden md:flex bg-transparent relative">
               {/* Blur background*/}
               {/* <div className="absolute inset-0 bg-cyan-300 blur-3xl opacity-15 pointer-events-none z-0"></div> */}
-              
+
               {/* Contenedor de la imagen */}
               <div className="relative z-10">
                 <div className="relative w-full h-auto rounded-2xl overflow-hidden">
@@ -150,10 +179,8 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {cards.map((card, index) => (
                 <div key={index} className="p-4 ">
-                  <h3 className="text-2xl font-semibold mb-2">{card.title}</h3>
-                  <div className="text-slate-800">
-                    {card.description()}
-                  </div>
+                  <h2 className="text-2xl font-semibold mb-2">{card.title}</h2>
+                  <div className="text-slate-800">{card.description()}</div>
                 </div>
               ))}
             </div>
@@ -177,7 +204,7 @@ export default function HomePage() {
                 { skill: "Frontend Development", percentage: 75 },
                 { skill: "Backend Development", percentage: 100 },
                 { skill: "Database Management", percentage: 80 },
-                { skill: "UI/UX Design", percentage: 75 }
+                { skill: "UI/UX Design", percentage: 75 },
               ].map((item, index) => (
                 <div key={index} className="mb-4">
                   <div className="flex justify-between mb-1">
@@ -205,7 +232,7 @@ export default function HomePage() {
                 { skill: "Spanish", percentage: 100 },
                 { skill: "English", percentage: 90 },
                 { skill: "Polish", percentage: 20 },
-                { skill: "German", percentage: 15 }
+                { skill: "German", percentage: 15 },
               ].map((item, index) => (
                 <div key={index} className="mb-4">
                   <div className="flex justify-between mb-1">

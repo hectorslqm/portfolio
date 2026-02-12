@@ -40,18 +40,24 @@ const WorkTimeline: React.FC = () => {
                 >
                   <div className="flex justify-between items-start mb-0 mt-[-2.8rem]">
                     <div className="bg-white rounded-2xl border-2 mb-4 mr-2">
-                      <a
-                        href={company.companyWebsite}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:underline"
-                        title={company.companyDescription}
-                        aria-label={`opens ${company.company} website in a new window`}
-                      >
+                      {company.companyWebsite ? (
+                        <a
+                          href={company.companyWebsite}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:underline"
+                          title={company.companyDescription}
+                          aria-label={`opens ${company.company} website in a new window`}
+                        >
+                          <h3 className="text-lg sm:text-2xl font-semibold text-black p-1">
+                            {company.company}
+                          </h3>
+                        </a>
+                      ) : (
                         <h3 className="text-lg sm:text-2xl font-semibold text-black p-1">
                           {company.company}
                         </h3>
-                      </a>
+                      )}
                     </div>
                     {/* Company logo */}
                     {company.logo && (

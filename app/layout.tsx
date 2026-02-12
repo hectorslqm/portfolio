@@ -6,7 +6,8 @@ import NavbarScrollHandler from "@/components/NavBarScrollHandler";
 
 export const metadata: Metadata = {
   title: "Hector S. Lazcano",
-  description: "Hector S. Lazcano's personal portfolio fullstack developer javascript python nextjs react nodejs",
+  description:
+    "Hector S. Lazcano's personal portfolio fullstack developer javascript python nextjs react nodejs",
 };
 
 export default function RootLayout({
@@ -20,25 +21,31 @@ export default function RootLayout({
         {/* Background wrapper */}
         <div className="w-full max-w-[110rem] mx-auto">
           <Navbar />
-        <NavbarScrollHandler />
+          <NavbarScrollHandler />
         </div>
         {/* Decorative "waves" at the top*/}
         {/* <div className="relative h-50 overflow-hidden w-[140%] -left-[10%]">
         </div> */}
-        <div className="z-0 pt-22 min-h-screen text-white">
+        <main className="z-0 pt-22 min-h-screen text-white" role="main">
           {/*The content*/}
           {children}
-        </div>
+        </main>
         {/* Decorative "waves" at the bottom*/}
         {/* <div className="bg-red-300 overflow-hidden"> */}
-          <div className="relative h-75 overflow-hidden">
+        <div className="relative h-75 overflow-hidden">
           <svg
             viewBox="0 45 1200 65"
             preserveAspectRatio="none"
             className="absolute bottom-0 h-full w-[120%] -left-[10%] wave-animation-l"
           >
             <defs>
-              <linearGradient id="waveGradient" x1="0%" y1="0%" x2="90%" y2="0%">
+              <linearGradient
+                id="waveGradient"
+                x1="0%"
+                y1="0%"
+                x2="90%"
+                y2="0%"
+              >
                 <stop offset="0%" stopColor="#0c4a6e" />
                 <stop offset="50%" stopColor="#0284c7" />
                 <stop offset="100%" stopColor="#0369a1" />
@@ -49,7 +56,7 @@ export default function RootLayout({
               fill="url(#waveGradient)"
             ></path>
           </svg>
-          <Footer />            
+          <Footer />
         </div>
       </body>
     </html>
