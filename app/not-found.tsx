@@ -1,14 +1,15 @@
 'use client'
 import React from 'react'
 import Link from 'next/link'
-import { useEffect, useState } from 'react'
+import { useSyncExternalStore } from 'react'
 
 export default function NotFound() {
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
+  // Render only after hydration (server snapshot = false, client snapshot = true)
+  const mounted = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false
+  )
 
   if (!mounted) {
     return null

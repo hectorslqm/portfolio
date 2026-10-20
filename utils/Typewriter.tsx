@@ -16,12 +16,18 @@ const Typewriter = ({
   const [displayed, setDisplayed] = useState("");
   const [isTyping, setIsTyping] = useState(true);
   const [showCursorState, setShowCursorState] = useState(false);
+  const [prevText, setPrevText] = useState(text);
 
-  useEffect(() => {
+  // Reset the animation when the text changes (state adjustment during render,
+  // as recommended by React instead of calling setState inside an effect)
+  if (prevText !== text) {
+    setPrevText(text);
     setDisplayed("");
     setIsTyping(true);
     setShowCursorState(false);
+  }
 
+  useEffect(() => {
     const startTyping = () => {
       setShowCursorState(true);
       let i = 0;
