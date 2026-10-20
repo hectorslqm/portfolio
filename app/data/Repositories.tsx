@@ -6,6 +6,8 @@ export type RepositoriesType = {
   tags: (keyof typeof Tags)[];
   type: "public" | "private";
   url: string;
+  /** Highlighted project: rendered larger and listed first */
+  featured?: boolean;
 }[];
 
 export const Repositories: RepositoriesType = [
@@ -20,10 +22,11 @@ export const Repositories: RepositoriesType = [
   {
     title: "RAG Project",
     description:
-      'This Project is focused on implementing a Retrieval-Augmented Generation (RAG) system using machine learning techniques.\n\nThe LLM used in this project is "meta/muse-glimmer-30b" and "gpt-5.4-mini".',
+      "This Project is focused on implementing a Retrieval-Augmented Generation (RAG) system using machine learning techniques.",
     tags: ["Jupyter", "Python"],
     url: "https://github.com/hectorslqm/RAG-Project",
     type: "public",
+    featured: true,
   },
   {
     title: "Users API",
