@@ -16,7 +16,11 @@ export default function HomePage() {
       <div className="text-white">
         Hi, I&apos;m Héctor, a Full Stack Developer passionate about turning
         complex ideas into scalable, reliable, and user-centered software
-        solutions.
+        solutions. <br />
+        I&apos;m currently studying an online{" "}
+        <b>MSc in Computer Science with Artificial Intelligence</b> at the
+        University of Hertfordshire. Artificial Intelligence at the University
+        of Hertfordshire.
       </div>
     ),
     () => (

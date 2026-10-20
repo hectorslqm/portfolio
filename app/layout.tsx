@@ -7,7 +7,7 @@ import NavbarScrollHandler from "@/components/NavBarScrollHandler";
 export const metadata: Metadata = {
   title: "Hector S. Lazcano",
   description:
-    "Hector S. Lazcano's personal portfolio fullstack developer javascript python nextjs react nodejs",
+    "Hector S. Lazcano's personal portfolio. Full Stack Developer (TypeScript, React, Next.js, Python) currently pursuing an MSc in Computer Science with Artificial Intelligence at the University of Hertfordshire.",
 };
 
 export default function RootLayout({

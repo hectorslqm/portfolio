@@ -18,6 +18,14 @@ export const Repositories: RepositoriesType = [
     type: "public",
   },
   {
+    title: "RAG Project",
+    description:
+      'This Project is focused on implementing a Retrieval-Augmented Generation (RAG) system using machine learning techniques.\n\nThe LLM used in this project is "meta/muse-glimmer-30b" and "gpt-5.4-mini".',
+    tags: ["Jupyter", "Python"],
+    url: "https://github.com/hectorslqm/RAG-Project",
+    type: "public",
+  },
+  {
     title: "Users API",
     description:
       "This API is a simple CRUD API built using Node.js and Express.js. The API is used to perform CRUD operations on a MongoDB database",
